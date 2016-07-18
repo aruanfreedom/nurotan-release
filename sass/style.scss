@@ -16,7 +16,7 @@ $susy: (
     gutter-position: inside,
     container-position: center,
     debug: (
-        image: show,
+        image: hide,
         color: #faf8ff,
         output: background,
         toggle: top right,
@@ -39,6 +39,7 @@ $large: 1366px 1450px;
 $large-note-big: 1450px;
 $large-note: 1280px 1450px;
 $medium: 0px 1280px;
+$small: 0px 960px;
 
 body {
     @include container();
@@ -472,6 +473,57 @@ body {
                     padding: 10px;
                     font-size: 0.75em;
                 }
+            }
+        }
+        .topic-electron {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: auto;
+            font-family: $openSans;
+            padding: 0;
+            width: 100%;
+            @include breakpoint($medium){
+                height: 100%;
+            }
+
+            .content-app{
+                padding: 20px;
+                @include breakpoint($medium) {
+                    padding: 11% 5%;
+                    font-size: 1.7em;
+                }
+                @include breakpoint($small) {
+                    padding: 10px;
+                    font-size: 0.8em;
+                }
+                span{
+                    color: $grey-dark;
+                }
+                ul{
+                    padding: 0;
+                    list-style: none;
+                    li{
+                        margin: 12px 0;
+                        a{
+                            color: $green;
+                            text-decoration: none;
+                            img{
+                                width: 19px;
+                                @include breakpoint($medium) {
+                                    width: 36px;
+                                }
+                                @include breakpoint($small) {
+                                    width: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h3 {
+                margin: 0;
+                border-bottom: 2px solid #000;
             }
         }
 
