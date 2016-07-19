@@ -10,7 +10,7 @@
                 $(tabs).children("div").children("div").eq(i).show();
                 $(tabs).children("ul").children("li").removeClass("active");
                 $(tabs).children("ul").children("li").eq(i).addClass("active");
-            }
+            };
 
             showPage(0);
 
@@ -28,4 +28,5 @@
 })(jQuery);
 $(document).ready(function(){
     $(".tabs").lightTabs();
+    $(".tabs-2").lightTabs();
 });

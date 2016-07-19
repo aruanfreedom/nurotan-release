@@ -33,6 +33,7 @@ $grey-dark: #969590;
 $blue: #06a8f9;
 $yellow: #fce300;
 $green: #02869b;
+$red: #b70000;
 
 // Size columns
 $large: 1366px 1450px;
@@ -316,6 +317,13 @@ body {
                             color: $blue;
                             border-bottom: 2px solid $blue;
                         }
+                        &.red {
+                            color: $red;
+                            &:hover{
+                                border-bottom: 2px solid $red;
+
+                            }
+                        }
                     }
                     &.burger {
                         display: none;
@@ -479,26 +487,35 @@ body {
             position: absolute;
             bottom: 0;
             left: 0;
-            height: auto;
+            height: 100%;
             font-family: $openSans;
             padding: 0;
             width: 100%;
-            @include breakpoint($medium){
-                height: 100%;
-            }
+            //@include breakpoint($medium){
+            //    height: 100%;
+            //}
 
             .content-app{
                 padding: 20px;
-                @include breakpoint($medium) {
-                    padding: 11% 5%;
-                    font-size: 1.7em;
-                }
+                top: 10%;
+                width: 84%;
+                position: relative;
                 @include breakpoint($small) {
-                    padding: 10px;
-                    font-size: 0.8em;
+                    padding: 20px;
+                    top: 2%;
+                    width: 84%;
+                    left: 2%;
+                    font-size: 0.5em;
+                    position: relative;
+                }
+                @include breakpoint(960, 1280) {
+                    padding: 5%;
+                    font-size: 1.2em;
+                    top: 2%;
                 }
                 span{
                     color: $grey-dark;
+                    font-size: 0.75em;
                 }
                 ul{
                     padding: 0;
@@ -508,8 +525,9 @@ body {
                         a{
                             color: $green;
                             text-decoration: none;
+                            font-size: 1.5em;
                             img{
-                                width: 19px;
+                                width: 27px;
                                 @include breakpoint($medium) {
                                     width: 36px;
                                 }
@@ -523,7 +541,9 @@ body {
             }
             h3 {
                 margin: 0;
+                font-family: $pt;
                 border-bottom: 2px solid #000;
+                width: 90%;
             }
         }
 
@@ -620,7 +640,14 @@ body {
             @include span(12);
         }
         img {
-            width: 100%;
+            //width: 100%;
+        }
+        .medium-block-2{
+            @include span(12);
+            margin-top: 8px;
+            @include breakpoint($medium){
+                @include span(6);
+            }
         }
         .date{
             background: url("../img/icons/clock-grey.png") no-repeat left;
@@ -716,32 +743,35 @@ body {
     clear: both;
 }
 
-.tabs {
+.tabs, .tabs-2 {
     margin-top: gutter(4);
     display: inline-block;
     font-family: $openSans;
     font-weight: bold;
     width: 100%;
+    @include breakpoint($medium){
+        @include span(6);
+    }
 }
 .comment{
     border-bottom: 2px solid $grey-dark;
     padding-bottom: 10px;
 }
-.tabs > div {
+.tabs > div,.tabs-2 > div {
     padding-top: 10px;
 }
-.tabs ul {
+.tabs ul, .tabs-2 ul {
     margin: 0;
     padding: 0;
 }
-.tabs ul:after {
+.tabs ul:after, .tabs-2 ul:after {
     content: "";
     display: block;
     clear: both;
     height: 5px;
     background: $blue;
 }
-.tabs ul li {
+.tabs ul li, .tabs-2 ul li {
     margin: 0;
     cursor: pointer;
     display: block;
@@ -752,7 +782,8 @@ body {
     background: #fff;
     color: #707070;
 }
-.tabs ul li.active, .tabs ul li.active:hover {
+.tabs ul li.active, .tabs ul li.active:hover,
+.tabs-2 ul li.active, .tabs-2 ul li.active:hover{
     background: $blue;
     color: #fff;
     a {
@@ -765,7 +796,7 @@ body {
         }
     }
 }
-.tabs ul li:hover {
+.tabs ul li:hover, .tabs-2 ul li:hover {
     color: #fff;
     background: $blue;
     a {
@@ -929,6 +960,10 @@ $green-block: 12 1/30 fluid float inside;
             }
 
             .tabs{
+                @include breakpoint($medium){
+                    @include span(12);
+                    margin-bottom: 33px;
+                }
                 margin: 0;
             }
 
@@ -936,7 +971,7 @@ $green-block: 12 1/30 fluid float inside;
                 color: #000;
                 background: $yellow;
             }
-            .tabs ul li.active, .tabs ul li.active:hover {
+            .tabs ul li.active, .tabs ul li.active:hover{
                 color: #000;
                 background: $yellow;
             }
