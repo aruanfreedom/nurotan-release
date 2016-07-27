@@ -1486,6 +1486,12 @@ footer{
 }
 
 .video-page {
+    #blocks-news{
+        @include breakpoint($medium){
+            @include span(12);
+        }
+    }
+
     .theme-search {
         .left-theme {
             h1 {
@@ -1522,6 +1528,11 @@ footer{
 
     .content-news {
         #blog {
+            .medium-block-2 {
+                @include breakpoint($medium){
+                    @include span(12);
+                }
+            }
             .date {
                 left: 0;
                 bottom: 0;
