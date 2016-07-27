@@ -1304,7 +1304,7 @@ footer{
     outline: -webkit-focus-ring-color auto 0px;
 }
 
-.news-page{
+.news-page, .video-page {
     .theme-search {
     background: $light-green;
     @include full();
@@ -1332,7 +1332,7 @@ footer{
         //     margin: 0 gutters(10);
         //     width: auto;
         // }
-        input {
+        input  {
             @include span(9.6);
             margin: 0 gutters(5);
             padding: gutters(5);
@@ -1485,6 +1485,71 @@ footer{
 
 }
 
+.video-page {
+    .theme-search {
+        .left-theme {
+            h1 {
+                background: url("../img/icons/video.png") left center no-repeat;
+                padding-left: 50%;
+            }
+        }
+    }
+    .theme {
+        .back {
+            background: url("../img/icons/arrow-back.png") left center no-repeat;
+            padding-left: 20px;
+            display: inline-block;
+        }
+        .active {
+            color: $blue;
+        }
+    }
+    .content-news {
+        .large-block {
+            a {
+                display: block;
+                background: url("../img/icons/play.png") no-repeat center center #000;
+                height: 100%;
+                z-index: 2;
+                position: relative;
+            }
+            img {
+                opacity: 0.5;
+            }
+        }
+
+    }
+
+    .content-news {
+        #blog {
+            .date {
+                left: 0;
+                bottom: 0;
+            }
+            .video {
+                margin-bottom: 20px;
+                a {
+                    display: block;
+                    background: url("../img/icons/play.png") no-repeat center center #000;
+                    background-size: 30%;
+                    height: 100%;
+                    z-index: 2;
+                    position: relative;
+                }
+                img {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+    }
+
+}
+
+.text-center {
+    text-align: center;
+}
+
 #see-also-blog, #category-blog {
     @include span(10);
     @include push(1);
@@ -1492,6 +1557,27 @@ footer{
     @include breakpoint($medium) {
         @include span(12);
         @include push(0);
+    }
+
+    .video {
+
+        a {
+            display: block;
+            background: url("../img/icons/play.png") no-repeat center center #000;
+            background-size: 30%;
+            height: 100%;
+            z-index: 2;
+            position: relative;
+        }
+        img {
+            opacity: 0.5;
+        }
+        .answer {
+            background: url("../img/icons/answer.png") no-repeat left;
+            color: #969590;
+            font-size: 0.75em;
+            padding-left: 12px;
+        }
     }
 
     h2 {
