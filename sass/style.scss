@@ -595,7 +595,7 @@ $news: 12 1/4 fluid float inside;
             display: inline-block;
             border-bottom: 2px solid #000;
             text-align: right;
-            width: 80%;
+            width: 100%;
             @include breakpoint($large-note){
                 padding: 0;
                 width: 85%;
@@ -1307,7 +1307,6 @@ footer{
 .news-page, .video-page {
     .theme-search {
     background: $light-green;
-    @include full();
     font-family: $openSans;
         padding: 5px 5px;
     .left-theme {
@@ -1364,9 +1363,19 @@ footer{
 
         .theme {
             ul {
+                list-style: none;
+                border-bottom: 1px solid #000;
+                font-size: 0.9em;
+                padding-left: 0;
                 width: 100%;
                 li {
                     float: left;
+                    a {
+                        text-decoration: none;
+                    }
+                    span {
+                        padding-left: 10px;
+                    }
                     &.right {
                         float: right;
                     }
@@ -1375,7 +1384,7 @@ footer{
         }
         .calendar {
             &.active {
-                background-position: -17px;
+                background-position: -18px;
             }
         }
 
