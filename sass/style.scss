@@ -581,7 +581,7 @@ $news: 12 1/4 fluid float inside;
     .cell-6 {
         @include layout($news);
     }
-    .theme {
+    .theme, .theme-8 {
         h2 {
             display: inline-block;
             position: relative;
@@ -620,6 +620,11 @@ $news: 12 1/4 fluid float inside;
                     }
                 }
             }
+        }
+    }
+    .theme-8 {
+        ul {
+            width: 80%;
         }
     }
     #blocks-news{
@@ -762,10 +767,12 @@ $news: 12 1/4 fluid float inside;
     border-bottom: 2px solid $grey-dark;
     padding-bottom: 10px;
 }
-.tabs > div,.tabs-2 > div {
-    padding-top: 10px;
-}
 .tabs ul, .tabs-2 ul {
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+.tabs ul li, .tabs-2 ul li {
     margin: 0;
     padding: 0;
 }
@@ -776,43 +783,156 @@ $news: 12 1/4 fluid float inside;
     height: 5px;
     background: $blue;
 }
-.tabs ul li, .tabs-2 ul li {
+.tabs ul li a, .tabs-2 ul li a{
     margin: 0;
+    border-width: 0;
     cursor: pointer;
     display: block;
     float: left;
     font-size: 0.75em;
-    padding: 10px 15px;
+    padding: 5px 15px;
     text-transform: uppercase;
     background: #fff;
     color: #707070;
+        &.icon {
+            position: relative;
+            &:before {
+                content: "";
+                background: url("../img/icons/social.png") no-repeat left;
+                height: 18px;
+                position: absolute;
+                left: 0;
+                display: block;
+                overflow: hidden;
+                width: 28px;
+            }
+            &.twitter {
+                &:before {
+                    content: "";
+                    background: url("../img/icons/social.png") no-repeat left;
+                    height: 18px;
+                    background-position: -10px;
+                    position: absolute;
+                    top: 7px;
+                    left: 0;
+                    display: block;
+                    overflow: hidden;
+                    width: 14px;
+                }
+            }
+            &.facebook {
+                &:before {
+                    content: "";
+                    background: url("../img/icons/social.png") no-repeat left;
+                    height: 18px;
+                    background-position: -46px;
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    display: block;
+                    overflow: hidden;
+                    width: 14px;
+                }
+            }
+        }
 }
-.tabs ul li.active, .tabs ul li.active:hover,
-.tabs-2 ul li.active, .tabs-2 ul li.active:hover{
+.tabs ul li>[aria-selected=true], .tabs ul li>[aria-selected=true]:hover,
+.tabs-2 ul li>[aria-selected=true], .tabs-2 ul li>[aria-selected=true]:hover{
+    border: 0 solid #cccccc;
     background: $blue;
     color: #fff;
-    a {
-        background: url("../img/icons/social-white.png") no-repeat center center;
-        &.twitter {
-            background-position: -10px;
-        }
-        &.facebook {
-            background-position: -45px;
-        }
-    }
 }
-.tabs ul li:hover, .tabs-2 ul li:hover {
-    color: #fff;
-    background: $blue;
-    a {
-        background: url("../img/icons/social-white.png") no-repeat center center;
-        &.twitter {
-            background-position: -10px;
-        }
-        &.facebook {
-            background-position: -45px;
+
+.tabs ul li a, .tabs-2 ul li a {
+    &[aria-selected=true] {
+        &.icon {
+            position: relative;
+            &:before {
+                content: "";
+                background: url("../img/icons/social-white.png") no-repeat left #06a8f9;
+                height: 18px;
+                position: absolute;
+                left: 0;
+                display: block;
+                overflow: hidden;
+                width: 28px;
+            }
+            &.twitter {
+                &:before {
+                    content: "";
+                    background: url("../img/icons/social-white.png") no-repeat left #06a8f9;
+                    height: 18px;
+                    background-position: -10px;
+                    position: absolute;
+                    top: 7px;
+                    left: 0;
+                    display: block;
+                    overflow: hidden;
+                    width: 14px;
+                }
+            }
+            &.facebook {
+                &:before {
+                    content: "";
+                    background: url("../img/icons/social-white.png") no-repeat left #06a8f9;
+                    height: 18px;
+                    background-position: -46px;
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    display: block;
+                    overflow: hidden;
+                    width: 14px;
+                }
+            }
         }
     }
+    &:hover{
+        color: #fff;
+        background: $blue;
+        &.icon {
+            position: relative;
+            &:before {
+                content: "";
+                background: url("../img/icons/social-white.png") no-repeat left #06a8f9;
+                height: 18px;
+                position: absolute;
+                left: 0;
+                display: block;
+                overflow: hidden;
+                width: 28px;
+            }
+            &.twitter {
+                &:before {
+                    content: "";
+                    background: url("../img/icons/social-white.png") no-repeat left #06a8f9;
+                    height: 18px;
+                    background-position: -10px;
+                    position: absolute;
+                    top: 7px;
+                    left: 0;
+                    display: block;
+                    overflow: hidden;
+                    width: 14px;
+                }
+            }
+            &.facebook {
+                &:before {
+                    content: "";
+                    background: url("../img/icons/social-white.png") no-repeat left #06a8f9;
+                    height: 18px;
+                    background-position: -46px;
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    display: block;
+                    overflow: hidden;
+                    width: 14px;
+                }
+            }
+        }
+    }
+
 }
 
 $green-block: 12 1/30 fluid float inside;
@@ -821,6 +941,7 @@ $green-block: 12 1/30 fluid float inside;
     @include layout($green-block);
     @include full;
     background: $green;
+    margin-bottom: 30px;
     margin-top: gutter(3);
 
 
@@ -914,6 +1035,7 @@ $green-block: 12 1/30 fluid float inside;
             }
         }
         #slider-center{
+
             @include span(4);
             @include breakpoint($medium){
                 @include span(12);
@@ -954,13 +1076,37 @@ $green-block: 12 1/30 fluid float inside;
             .slider-green{
                 position: relative;
                 background: #fff;
-                top: 28px;
+                top: 0;
+
+                .carousel {
+                    margin-bottom: 0;
+                    background: #fff;
+                    top: 71px;
+                    figure {
+                        min-height: 258px;
+                        figcaption {
+                            background-color: $green;
+                        }
+                    }
+                    button {
+
+                        bottom: 0px;
+                        right: 0px;
+                        padding: 0;
+                        top: auto;
+                        background: $green;
+                        font-size: 1.8rem;
+                        &.forward {
+                            left: auto;
+                        }
+                    }
+                }
 
                 h4{
                     text-align: center;
                     position: relative;
+                    margin: 0.53rem 0;
                     width: 100%;
-                    bottom: -22px;
                 }
             }
 
@@ -972,11 +1118,12 @@ $green-block: 12 1/30 fluid float inside;
                 margin: 0;
             }
 
-            .tabs ul li:hover {
+            .tabs ul li a:hover {
                 color: #000;
                 background: $yellow;
             }
-            .tabs ul li.active, .tabs ul li.active:hover{
+            .tabs ul li>[aria-selected=true], .tabs ul li>[aria-selected=true]:hover,
+            .tabs-2 ul li>[aria-selected=true], .tabs-2 ul li>[aria-selected=true]:hover{
                 color: #000;
                 background: $yellow;
             }
@@ -1027,6 +1174,8 @@ $videos:  12 1/10 fluid float inside;
         .date{
             background: url("../img/icons/clock-grey.png") no-repeat left;
             padding: 0 15px;
+            bottom: 0;
+            left: 0;
             font-size: 0.75em;
             color: #969590;
         }
@@ -1123,6 +1272,7 @@ $videos:  12 1/10 fluid float inside;
         margin-top: 10px;
     }
 }
+
 .slider-bottom{
     @include span(10);
     @include push(1);

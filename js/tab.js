@@ -1,4 +1,4 @@
-(function($){
+/*(function($){
     jQuery.fn.lightTabs = function(options){
 
         var createTabs = function(){
@@ -27,6 +27,6 @@
     };
 })(jQuery);
 $(document).ready(function(){
-    $(".tabs").lightTabs();
-    $(".tabs-2").lightTabs();
-});
+    $("#slider-center .tabs").lightTabs();
+    $("#blog .tabs-2").lightTabs();
+});*/
