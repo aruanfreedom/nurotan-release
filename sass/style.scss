@@ -44,7 +44,7 @@ header {
     background: url(../img/banner-bg.png) no-repeat 100% 100%, url(../img/banner-top.png) repeat-x top left;
     @include full;
     padding: 0;
-     @include breakpoint($medium) {
+    @include breakpoint($medium) {
         background: url(../img/banner-top.png) repeat-x top left;
     }
     .banner {
@@ -69,7 +69,7 @@ header {
             padding: 8px 0;
             padding-right: 225px;
             @include breakpoint($medium) {
-                    padding-right: 0;
+                padding-right: 0;
             }
         }
         .cell-3-4 {
@@ -82,6 +82,7 @@ header {
     #menu-block {
         background: url(../img/banner-naz3.png) no-repeat 100%;
         margin-top: -53.1px;
+        position: relative;
         height: 174px;
         @include span(10);
         @include push(1);
@@ -89,7 +90,7 @@ header {
         padding-top: 61px;
         padding-right: 279px;
         border-bottom: 2px solid #000;
-         @include breakpoint($medium) {
+        @include breakpoint($medium) {
             background: none;
             @include full();
             @include push(0);
@@ -98,16 +99,15 @@ header {
         .cell-10 {
             @include span(10);
         }
-
         #logo {
-             background: #fff;
-             height: 160px;
-             img {
+            background: #fff;
+            height: 160px;
+            img {
                 margin: 14% 0 0 0;
                 @include breakpoint($large-note) {
                     margin: 30% 0 0 0;
                 }
-             }
+            }
         }
         #nazarbaev {
             position: absolute;
@@ -129,176 +129,175 @@ header {
         @include span(2);
     }
     .on-menu {
-            border-bottom: 1px solid $grey;
-            padding: 0 0 0 0;
-            height: 35px;
+        border-bottom: 1px solid $grey;
+        padding: 0 0 0 0;
+        height: 35px;
+        margin-top: 25px;
+        @include breakpoint($medium) {
             margin-top: 25px;
+        }
+        .left-on-menu {
+            @include span(5.5);
+            .block-top-right {
+                float: left;
+            }
             @include breakpoint($medium) {
-                margin-top: 70px;
-            }
-            .left-on-menu {
-                @include span(5.5);
+                @include span(12 last);
+                margin-bottom: 23px;
                 .block-top-right {
-                    float: left;
-                }
-                @include breakpoint($medium) {
-                    @include span(12 last);
-                    margin-bottom: 23px;
-                    .block-top-right {
-                        float: none;
-                    }
-                }
-                span {
-                    border-right: 1px solid $grey;
-                    padding: 0 15px;
-                    height: 19px;
-                    display: inline-block;
-                    text-align: center;
-                    font-size: 0.9em;
-                    &.date {
-                        padding-right: 10px;
-                        padding-left: 0;
-                        left: 0;
-                        bottom: 0;
-                    }
-                    &.tel {
-                        img {
-                            padding-right: 3px;
-                        }
-                    }
-                    &.language {
-                        color: #969590;
-                        i {
-                            cursor: pointer;
-                            padding: 0 3px;
-                            display: inline-block;
-                            height: 33px;
-                            &.active, &:hover {
-                                border-bottom: 1px solid $blue;
-                                color: $blue;
-                            }
-                        }
-                    }
+                    float: none;
                 }
             }
-            .right-on-menu {
+            span {
+                border-right: 1px solid $grey;
+                padding: 0 15px;
+                height: 19px;
+                display: inline-block;
+                text-align: center;
                 font-size: 0.9em;
-                @include span(6);
-                .block-top-right {
-                    float: right;
-                }
-                @include breakpoint($medium) {
-                    @include span(12 last);
-                    .block-top-right {
-                        float: none;
-                    }
-                }
-                
-                .search {
-                    background: url("../img/icons/search.png") no-repeat right transparent;
-                    border: none;
+                &.date {
                     padding-right: 10px;
-                    margin-right: 20px;
-                    width: 87px;
-                    display: inline-block;
-                    height: 1.5rem;
-                    @include breakpoint($medium) {
-                        border-bottom: 2px solid #000;
-                        padding: 10px;
-                        margin: 0;
-                        width: 100%;
+                    padding-left: 0;
+                    left: 0;
+                    bottom: 0;
+                }
+                &.tel {
+                    img {
+                        padding-right: 3px;
                     }
-                    &::placeholder {
-                        color: #a3a29d;
-                        font-style: italic;
-                        font-family: $pt;
-                        font-weight: bold;
-                    }
-                    &:focus {
-                        border: none;
-                        outline: -webkit-focus-ring-color auto 0;
-                        @include breakpoint($medium) {
-                            border-bottom: 1px solid #000;
+                }
+                &.language {
+                    color: #969590;
+                    i {
+                        cursor: pointer;
+                        padding: 0 3px;
+                        display: inline-block;
+                        height: 33px;
+                        &.active,
+                        &:hover {
+                            border-bottom: 1px solid $blue;
+                            color: $blue;
                         }
                     }
                 }
             }
         }
+        .right-on-menu {
+            font-size: 0.9em;
+            @include span(6);
+            .block-top-right {
+                float: right;
+            }
+            @include breakpoint($medium) {
+                @include span(12 last);
+                .block-top-right {
+                    float: none;
+                }
+            }
+            .search {
+                background: url("../img/icons/search.png") no-repeat right transparent;
+                border: none;
+                padding-right: 10px;
+                margin-right: 20px;
+                width: 87px;
+                display: inline-block;
+                height: 1.5rem;
+                @include breakpoint($medium) {
+                    border-bottom: 2px solid #000;
+                    padding: 10px;
+                    margin: 0;
+                    width: 100%;
+                }
+                &::placeholder {
+                    color: #a3a29d;
+                    font-style: italic;
+                    font-family: $pt;
+                    font-weight: bold;
+                }
+                &:focus {
+                    border: none;
+                    outline: -webkit-focus-ring-color auto 0;
+                    @include breakpoint($medium) {
+                        border-bottom: 1px solid #000;
+                    }
+                }
+            }
+        }
+    }
     .cell-10 {
-        @include span(12);        
+        @include span(12);
     }
     .menu {
         font-family: $openSans;
         position: relative;
         z-index: 2;
-
         @include span(10);
         @include breakpoint($medium) {
             @include span(10);
             position: absolute;
             right: 0;
         }
-        padding: 0; 
+        padding: 0;
         .social {
             float: right;
-                    display: inline-block;
-                    border-right: 1px solid $grey;
-                    padding: 0 0 0 18px;
-                    @include breakpoint($medium) {
-                        margin: 10px 0;
-                        padding: 0;
-                        border-right: 0 solid #ebebeb;
-                        border-left: 0 solid #ebebeb;
-                        text-align: center;
-                    }
-                    a {
-                        display: inline-block;
-                        padding: 0 10px;
-                        overflow: hidden;
-                        height: 11px;
-                        width: 13px;
-                        &.twitter {
-                            background: url("../img/icons/social.png") no-repeat center center;
-                            background-position: -12px;
-                        }
-                        &.facebook {
-                            background: url("../img/icons/social.png") no-repeat center center;
-                            background-position: -47px;
-                        }
-                        &.google-plus {
-                            background: url("../img/icons/social.png") no-repeat center center;
-                            background-position: -83px;
-                        }
-                        &.youtube {
-                            background: url("../img/icons/social.png") no-repeat center center;
-                            background-position: -118px;
-                        }
-                        &.rss {
-                            background: url("../img/icons/social.png") no-repeat center center;
-                            background-position: -153px;
-                        }
-                    }
+            display: inline-block;
+            border-right: 1px solid $grey;
+            padding: 0 0 0 18px;
+            @include breakpoint($medium) {
+                margin: 10px 0;
+                padding: 0;
+                border-right: 0 solid #ebebeb;
+                border-left: 0 solid #ebebeb;
+                text-align: center;
+            }
+            a {
+                display: inline-block;
+                padding: 0 10px;
+                overflow: hidden;
+                height: 11px;
+                width: 13px;
+                &.twitter {
+                    background: url("../img/icons/social.png") no-repeat center center;
+                    background-position: -12px;
                 }
-                .login {
-                    float: right;
-                    @include breakpoint($medium) {
-                        float: right;
-                        display: inline-block;
-                        position: relative;
-                        right: 15px;
-                        top: 10px;
-                        /* width: 100%; */
-                    }
-                    span {
-                        padding: 0 0 0 10px;
-                    }
-                    i {
-                        color: $blue;
-                    }
-                    a {
-                        text-decoration: none;
-                    }
+                &.facebook {
+                    background: url("../img/icons/social.png") no-repeat center center;
+                    background-position: -47px;
                 }
+                &.google-plus {
+                    background: url("../img/icons/social.png") no-repeat center center;
+                    background-position: -83px;
+                }
+                &.youtube {
+                    background: url("../img/icons/social.png") no-repeat center center;
+                    background-position: -118px;
+                }
+                &.rss {
+                    background: url("../img/icons/social.png") no-repeat center center;
+                    background-position: -153px;
+                }
+            }
+        }
+        .login {
+            float: right;
+            @include breakpoint($medium) {
+                float: right;
+                display: inline-block;
+                position: relative;
+                right: 15px;
+                top: 10px;
+                /* width: 100%; */
+            }
+            span {
+                padding: 0 0 0 10px;
+            }
+            i {
+                color: $blue;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
         ul {
             &.big-menu {
                 padding-left: 0;
@@ -411,10 +410,11 @@ header {
             }
         }
         .cell-login-soc {
-           @include span(11.3);
-           @include breakpoint($medium) {
-
-           }
+            @include span(11.3);
+            @include breakpoint($medium) {
+                margin-top: 40px;
+                width: 100%;
+            }
         }
     }
 }
@@ -456,6 +456,10 @@ header {
             }
         }
     }
+    #news-block-scroll {
+        height: 460px;
+        overflow-y: scroll;
+    }
 }
 
 .cell-6 {
@@ -468,7 +472,7 @@ header {
 }
 
 .large-block {
-    background: #000;
+    background: #000000;
     margin-top: 20px;
     position: relative;
     box-shadow: inset 0px -53px 52px -10px rgba(0, 0, 0, 0.75);
@@ -630,6 +634,163 @@ header {
     }
 }
 
+#news-block-scroll {
+    .medium-block,
+    .medium-block-2 {
+        background: #fff;
+        margin-top: 20px;
+        border-top: 2px solid #ccc;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-left: gutter(1);
+        // overflow: hidden;
+        height: auto;
+        position: relative;
+        @include breakpoint($medium) {
+            margin-left: 0;
+            height: auto;
+        }
+        .topic-share-grey {
+            position: absolute;
+            cursor: pointer;
+            right: 10px;
+            bottom: 0;
+            height: auto;
+            width: auto;
+        }
+        .date {
+            background: url(../img/icons/clock-grey.png) no-repeat left;
+            padding: 15px;
+            font-size: 0.75em;
+            position: relative;
+            left: 10px;
+            bottom: 10px;
+            color: #06a8f9;
+            i {
+                font-weight: bold;
+            }
+        }
+        .category {
+            position: relative;
+            top: 10px;
+            left: 30px;
+            i {
+                background: $yellow;
+                font-weight: bold;
+                padding: 1px 8px;
+                font-size: 0.75em;
+            }
+        }
+        .topic-img {
+            @include span(6);
+            @include breakpoint($medium) {
+                @include span(12);
+            }
+        }
+        img {
+            height: auto;
+            width: 184px;
+            @include breakpoint($medium) {
+                width: 100%;
+            }
+        }
+        .topic-description {
+            @include span(12);
+        }
+        p {
+            padding: 10px;
+            margin: 0;
+        }
+        .topic {
+            position: relative;
+            @include span(6);
+            bottom: 0;
+            box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.95);
+            left: 0;
+            @include breakpoint($medium) {
+                padding: 1px;
+                width: 100%;
+            }
+            h2 {
+                font-size: 0.85em;
+                font-family: $openSans;
+                padding: 0 0 15px 10px;
+                text-transform: uppercase;
+                margin: 0;
+                font-weight: bold;
+                color: #000;
+                @include breakpoint($medium) {
+                    padding: 10px;
+                    font-size: 0.75em;
+                }
+            }
+        }
+        .topic-electron {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            font-family: $openSans;
+            padding: 0;
+            width: 100%;
+            //@include breakpoint($medium){
+            //    height: 100%;
+            //}
+            .content-app {
+                padding: 20px;
+                top: 10%;
+                width: 84%;
+                position: relative;
+                @include breakpoint($small) {
+                    padding: 20px;
+                    top: 2%;
+                    width: 84%;
+                    left: 2%;
+                    font-size: 0.5em;
+                    position: relative;
+                }
+                @include breakpoint(960,
+                1280) {
+                    padding: 5%;
+                    font-size: 1.2em;
+                    top: 2%;
+                }
+                span {
+                    color: $grey-dark;
+                    font-size: 0.75em;
+                }
+                ul {
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        margin: 12px 0;
+                        a {
+                            color: $green;
+                            text-decoration: none;
+                            font-size: 1.5em;
+                            img {
+                                width: 27px;
+                                @include breakpoint($medium) {
+                                    width: 36px;
+                                }
+                                @include breakpoint($small) {
+                                    width: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h3 {
+                margin: 0;
+                font-family: $pt;
+                border-bottom: 2px solid #000;
+                width: 90%;
+            }
+        }
+    }
+}
+
 .medium-block-2 {
     margin-top: gutter(0.6);
 }
@@ -660,6 +821,8 @@ $news: 12 1/4 fluid float inside;
         h2 {
             display: inline-block;
             position: relative;
+            width: 100%; 
+            border-bottom: 2px solid #000;
             top: 10px;
             @include breakpoint($medium) {
                 text-align: center;
@@ -729,8 +892,10 @@ $news: 12 1/4 fluid float inside;
     @include breakpoint($medium) {
         @include span(12);
     }
-    img {
-        //width: 100%;
+    a {
+        img.partia {
+            width: 100%;
+        }
     }
     .medium-block-2 {
         @include span(12);
@@ -738,6 +903,9 @@ $news: 12 1/4 fluid float inside;
         @include breakpoint($medium) {
             @include span(6);
         }
+    }
+    .tabs ul li a, .tabs-2 ul li a {
+        padding: 5px 25px;
     }
     .date {
         background: url("../img/icons/clock-grey.png") no-repeat left;
@@ -899,7 +1067,7 @@ $news: 12 1/4 fluid float inside;
                 background-position: -10px;
                 position: absolute;
                 top: 7px;
-                left: 0;
+                left: 5px;
                 display: block;
                 overflow: hidden;
                 width: 14px;
@@ -913,7 +1081,7 @@ $news: 12 1/4 fluid float inside;
                 background-position: -46px;
                 position: absolute;
                 top: 8px;
-                left: 0;
+                left: 5px;
                 display: block;
                 overflow: hidden;
                 width: 14px;
@@ -954,7 +1122,7 @@ $news: 12 1/4 fluid float inside;
                     background-position: -10px;
                     position: absolute;
                     top: 7px;
-                    left: 0;
+                    left: 5px;
                     display: block;
                     overflow: hidden;
                     width: 14px;
@@ -968,7 +1136,7 @@ $news: 12 1/4 fluid float inside;
                     background-position: -46px;
                     position: absolute;
                     top: 8px;
-                    left: 0;
+                    left: 5px;
                     display: block;
                     overflow: hidden;
                     width: 14px;
@@ -1118,15 +1286,21 @@ $green-block: 12 1/30 fluid float inside;
                 }
             }
         }
-        #slider-center {
-            @include span(4);
+        
+    }
+}
+
+#slider-center {
+            margin: 26px 0 0 0;
+            @include span(12);
             @include breakpoint($medium) {
                 @include span(12);
                 margin-top: 50px;
             }
             img {
-                margin: 0 auto;
-                width: auto;
+                display: inline-block;
+                padding-top: 10%;
+                @include span(3);
             }
             .owl-controls {
                 background: $green;
@@ -1161,19 +1335,22 @@ $green-block: 12 1/30 fluid float inside;
                 .carousel {
                     margin-bottom: 0;
                     background: #fff;
-                    top: 71px;
+                    top: 0px;
                     figure {
-                        min-height: 258px;
+                            min-height: 258px;
+                            padding: 0 50px;
                         figcaption {
                             background-color: $green;
                         }
                     }
                     button {
-                        bottom: 0px;
+                        bottom: auto;
                         right: 0px;
                         padding: 0;
-                        top: auto;
-                        background: $green;
+                        color: $green;
+                        height: 100%;
+                        top: 0;
+                        background: #fff;
                         font-size: 1.8rem;
                         &.forward {
                             left: auto;
@@ -1209,13 +1386,19 @@ $green-block: 12 1/30 fluid float inside;
                 color: #000;
                 background: $yellow;
             }
-            .tabs > div {
+            .tabs ul {
+                text-align: center;
+            }
+            .tabs ul li{
+                float: none;
+                display: inline-block;
+                margin-bottom: -5px;
+            }
+            .tabs>div {
                 background: #fff;
                 padding-top: 10px;
             }
         }
-    }
-}
 
 $videos: 12 1/10 fluid float inside;
 #videos {
@@ -1397,7 +1580,7 @@ $videos: 12 1/10 fluid float inside;
     margin-top: 30px;
     font-family: $openSans;
     ul {
-        text-align: center;
+        text-align: left;
         li {
             display: inline-block;
             a {
@@ -1424,13 +1607,14 @@ footer {
     }
     .cell-2 {
         @include span(4);
+        margin-top: 30px;
     }
     .block-top-right {
         @include span(8 last);
         text-align: right;
-        margin-top: 5%;
+        margin-top: 7%;
         @include breakpoint($medium) {
-            margin-top: 2%;
+            margin-top: 7%;
         }
     }
     .search {
