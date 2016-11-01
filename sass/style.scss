@@ -902,8 +902,15 @@ $news: 12 1/4 fluid float inside;
         .pdf-file {
             display: block;
             margin-bottom: 10px;
+            img {
+                float: left;
+            }
             .name-file {
                 color: #000;
+                display: block;
+                float: left;
+                width: 280px;
+                padding: 0 0px 20px 15px;
                 font-weight: bold;
             }
         }
@@ -2275,4 +2282,7 @@ footer {
 
 #main-video {
     border-bottom: 2px solid $grey;
+}
+.theme-bg {
+    margin: 20px 0;
 }
