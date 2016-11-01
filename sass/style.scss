@@ -893,8 +893,14 @@ $news: 12 1/4 fluid float inside;
         @include span(12);
     }
     a {
-        img.partia {
-            width: 100%;
+        img {
+            &.partia {
+                width: 100%;
+            }
+            
+            &.doctrina-pdf {
+                margin-bottom: 10px;
+            }
         }
     }
     .medium-block-2 {
@@ -1923,6 +1929,9 @@ footer {
                 &.city {
                     background: url("../img/icons/city.png") left center no-repeat;
                 }
+                &.paper {
+                    background: url("../img/icons/paper.png") left center no-repeat;
+                }
             }
         }
     }
@@ -2188,6 +2197,14 @@ footer {
     color: $green;
 }
 
+.blue {
+    color: $blue;
+    &.uppercase {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
 #font-block-fixed {
     position: fixed;
     top: 0;
@@ -2203,7 +2220,7 @@ footer {
     margin: 5px;
     width: 50px;
 }
-#font-block-fixed button:hover{
+#font-block-fixed button:hover, #font-block-fixed button:focus {
     color: #e9bc5e;
 }
 
@@ -2211,4 +2228,8 @@ footer {
     color: $red;
     font-size: 2em;
     font-weight: bold;
+}
+
+#main-video {
+    border-bottom: 2px solid $grey;
 }
