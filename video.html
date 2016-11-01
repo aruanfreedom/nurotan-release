@@ -23,14 +23,16 @@
     чтобы улучшить свои возможности.</p>
 <![endif]-->
 
-<!--Header-->
+<!-- Header block -->
 <header>
     <!--Banner top-->
     <div class="banner">
-        <img src="img/banner2.jpg" alt="баннер">
-    </div>
+        <div id="main-banner">
+            <img src="img/text-top-banner.png" alt="баннер">
+        </div>
+    </div> 
     <!--Banner top END-->
-    <div class="center">
+    <div id="menu-block">
         <div id="logo" class="cell-2">
             <img src="img/logo.png" alt="Нур отан логотип">
         </div>
@@ -38,13 +40,10 @@
 
             <div class="left-on-menu">
                 <div class="block-top-right">
-                        <span class="date">
-                            <strong><i>11 июля, 2016</i></strong>
-                         </span>
                     <span class="language">
                             <i>KZ</i>
                             <i class="active">RU</i>
-                            <i>EN</i>
+                            <!-- <i>EN</i> -->
                         </span>
                     <span class="tel">
                             <img src="img/icons/tel.png" alt="telephone">
@@ -57,28 +56,13 @@
             <div class="right-on-menu">
                 <div class="block-top-right right">
                     <input type="text" placeholder="Я ищу..." class="search">
-                    <span class="social">
-                            <a href="#twitter" class="twitter"></a>
-                            <a href="#facebook" class="facebook"></a>
-                            <a href="#google-plus" class="google-plus"></a>
-                            <a href="#youtube" class="youtube"></a>
-                            <a href="#rss" class="rss"></a>
-                        </span>
-                    <span class="login">
-                            <span>
-                                <a href="#sign">
-                                    <img src="img/icons/login.png" alt="Войти">
-                                    <i>Войти</i>
-                                </a>
-                            </span>
-                            <span><a href="#sign-up"><i>Регистрация</i></a></span>
-                        </span>
+                    
                 </div>
             </div>
 
         </div>
 
-        <div class="menu cell-10">
+        <div class="menu">
             <ul class="big-menu">
                 <li><a href="#" class="active">Главная</a></li>
                 <li><a href="#">Партия</a></li>
@@ -86,8 +70,8 @@
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Программные документы</a></li>
                 <li><a href="#">Регионы</a></li>
-                <li><a href="#" class="red">Общественная приемная</a></li>
-                <li class="last"><a href="#"><span>Еще</span> <img src="img/icons/burger.png" alt="burger"></a></li>
+                <!-- <li><a href="#" class="red">Общественная приемная</a></li> -->
+                <li class="last"><a href="#"><img src="img/icons/burger.png" alt="burger"></a></li>
                 <li class="burger"><a href="#"><img src="img/icons/burger.png" alt="burger"></a></li>
             </ul>
             <ul class="small-menu">
@@ -99,10 +83,28 @@
                 <li><a href="#">Регионы</a></li>
                 <li><a href="#" class="red">Общественная приемная</a></li>
             </ul>
+            <div class="cell-login-soc">
+                    <span class="login">
+                            <span>
+                                <a href="#sign">
+                                    <img src="img/icons/login.png" alt="Войти">
+                                    <i>Войти</i>
+                                </a>
+                            </span>
+                            <span><a href="#sign-up"><i>Регистрация</i></a></span>
+                        </span>
+                         <span class="social">
+                            <a href="#twitter" class="twitter"></a>
+                            <a href="#facebook" class="facebook"></a>
+                            <a href="#google-plus" class="google-plus"></a>
+                            <a href="#youtube" class="youtube"></a>
+                            <a href="#rss" class="rss"></a>
+                        </span>
+                        </div>
         </div>
     </div>
 </header>
-<!--End header-->
+<!-- End Header block -->
 
 
 <!-- Main-->
@@ -110,7 +112,7 @@
 
 
     <!--Theme blog-->
-        <div class="theme-search center">
+        <div id='theme-blog' class="theme-search center">
             <div class="left-theme">
                 <h1>Видео</h1>
             </div>
@@ -193,11 +195,20 @@
                 <strong><i>12</i></strong>
             </span>
                         </div>
+                        <div class="video item text-center">
+                            <a href="https://www.youtube.com/embed/YjUXZjTjJ9E" data-modal-title="Коротко о Плане нации - 100 конкретных шагов">
+                                <img src="img/poster/video-poster1.png" >
+                            </a>
 
+                            <p>Коротко о Плане нации - 100 конкретных шагов</p>
+                            <span class="date">
+                <strong><i>11 июля, 2016</i></strong>
+             </span>
+                            <span class="answer">
+                <strong><i>12</i></strong>
+            </span>
+                        </div>
 
-                    <div class="medium-block-2">
-                        <img src="img/top-block/partia.jpg" alt="партия">
-                    </div>
 
                 </div>
             </div>
@@ -411,6 +422,14 @@
 </footer>
 <!--Footer END-->
 
+
+<!--Start increase and decrease-->
+<div id="font-block-fixed">
+    <button id="increase">+</button><br />
+    <button id="decrease">-</button>
+</div>
+<!--End increase and decrease-->
+
 <!--Lib js-->
 <script src="js/vendor/jquery-1.12.0.min.js"></script>
 <script src="js/plugins.js"></script>
@@ -419,7 +438,7 @@
 <!--Lib js END-->
 <!--My script-->
 <script src="js/main.js"></script>
-<script src="js/tab.js"></script>
+<!--<script src="js/tab.js"></script>-->
 <!--My script End-->
 <script>
     $(document).ready(function () {
