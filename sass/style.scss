@@ -1718,7 +1718,8 @@ footer {
 
 .news-page,
 .video-page,
-.all-video-page {
+.all-video-page,
+.hot-line-page {
     #theme-blog {
         margin-top: 60px;
     }
@@ -1809,6 +1810,9 @@ footer {
             font-family: $openSans;
             h2 {
                 color: $blue;
+                &.green {
+                    color: $green;
+                }
             }
             .category {
                 text-transform: uppercase;
@@ -1905,7 +1909,7 @@ footer {
     }
 }
 
-.video-page, .all-video-page {
+.video-page, .all-video-page, .hot-line-page {
     #blocks-news {
         @include breakpoint($medium) {
             @include span(12);
@@ -1915,7 +1919,10 @@ footer {
         .left-theme {
             h1 {
                 background: url("../img/icons/video.png") left center no-repeat;
-                padding-left: 50%;
+                padding-left: 50px;
+                &.city {
+                    background: url("../img/icons/city.png") left center no-repeat;
+                }
             }
         }
     }
@@ -2164,6 +2171,23 @@ footer {
     }
 }
 
+.hot-line-page .content-news {
+    #blog {
+        .medium-block-2 {
+            margin: 10px 0 0 0;
+            height: 271px;
+        }
+        .cell-12 {
+            border-top: none;
+        } 
+    }
+   
+}
+
+.green {
+    color: $green;
+}
+
 #font-block-fixed {
     position: fixed;
     top: 0;
@@ -2181,4 +2205,10 @@ footer {
 }
 #font-block-fixed button:hover{
     color: #e9bc5e;
+}
+
+.red-span {
+    color: $red;
+    font-size: 2em;
+    font-weight: bold;
 }
