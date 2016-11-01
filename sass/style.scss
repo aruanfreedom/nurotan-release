@@ -1706,6 +1706,10 @@ footer {
     &:active {
         box-shadow: inset 0px 0px 40px -6px rgba(0, 0, 0, 0.75);
     }
+    .theme-load {
+        color: $blue;
+        text-decoration: underline;
+    }
 }
 
 :focus {
@@ -1713,7 +1717,8 @@ footer {
 }
 
 .news-page,
-.video-page {
+.video-page,
+.all-video-page {
     #theme-blog {
         margin-top: 60px;
     }
@@ -1729,7 +1734,7 @@ footer {
                 vertical-align: middle;
                 display: table-cell;
                 margin: 0;
-                padding-left: 45%;
+                padding-left: 50px;
                 font-size: 1em;
             }
         }
@@ -1900,7 +1905,7 @@ footer {
     }
 }
 
-.video-page {
+.video-page, .all-video-page {
     #blocks-news {
         @include breakpoint($medium) {
             @include span(12);
@@ -1972,13 +1977,16 @@ footer {
 }
 
 #see-also-blog,
-#category-blog {
+.category-blog {
     @include span(10);
     @include push(1);
     @include breakpoint($medium) {
         @include span(12);
         @include push(0);
     }
+    .cell-6 {
+            @include span(6);
+        }
     .video {
         a {
             display: block;
@@ -2017,6 +2025,7 @@ footer {
         border-top: 1px solid #000;
         margin-top: -12px;
         padding-top: 30px;
+        position: relative;
         z-index: 1;
     }
     .mini-news {
@@ -2046,7 +2055,7 @@ footer {
     }
 }
 
-#category-blog {
+.category-blog {
     ul {
         padding-top: 0;
         width: 100%;
@@ -2088,7 +2097,7 @@ footer {
         .category {
             background: url("../img/icons/arrow-bottom.png") right center no-repeat;
             color: #000;
-            font-size: 1em;
+            font-size: 0.7em;
             font-family: $openSans;
             text-transform: capitalize;
             font-weight: bold;
@@ -2104,6 +2113,54 @@ footer {
     }
     .load-more {
         margin-top: 0;
+        position: relative;
+        bottom: 0;
+    }
+}
+
+.all-video-page   {
+    .content-news {
+    #blog {
+            padding: 0;
+            &.cell-12 {
+                border-top: none;
+                padding: 0;
+                
+                .video {
+                    @include span(4);
+                }
+            }
+        }
+    }
+    .category-blog .cell-6 {
+        @include breakpoint($medium) {
+            @include span(12);
+        }
+    }
+}
+
+.tag {
+    background: url('/img/tag-bg.png') no-repeat center center;
+    background-size: cover;
+    margin: 10px 0;
+    cursor: pointer;
+    padding-left: 40px !important;
+    padding: 2px;
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+       background: url('/img/tag-bg-w.png') no-repeat center center; 
+       background-size: cover;
+       color: #000;
+    }
+    @include breakpoint($medium) {
+        background: none; 
+        background-color: $blue; 
+        border: 2px solid #000;
+         &:hover {
+            background: none; 
+            background-color: $grey; 
+         }
     }
 }
 
