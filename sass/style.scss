@@ -893,13 +893,18 @@ $news: 12 1/4 fluid float inside;
         @include span(12);
     }
     a {
+        text-decoration: none;
         img {
             &.partia {
                 width: 100%;
             }
-            
-            &.doctrina-pdf {
-                margin-bottom: 10px;
+        }
+        .pdf-file {
+            display: block;
+            margin-bottom: 10px;
+            .name-file {
+                color: #000;
+                font-weight: bold;
             }
         }
     }
