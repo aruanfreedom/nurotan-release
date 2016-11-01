@@ -318,7 +318,7 @@ header {
                 }
                 li {
                     display: inline-block;
-                    padding: 0px 0% 0 2%;
+                    padding: 0px 0% 0 1%;
                     @include breakpoint($medium) {
                         display: none;
                     }
@@ -335,7 +335,7 @@ header {
                             padding: 12.2px 0;
                         }
                         @include breakpoint($large-note-big) {
-                            padding: 12.3px 10px;
+                            padding: 12.3px 0;
                         }
                         &.active,
                         &:hover {
@@ -2102,4 +2102,23 @@ footer {
     .load-more {
         margin-top: 0;
     }
+}
+
+#font-block-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+#font-block-fixed button{
+    background: #eee;
+    border-radius: 3px;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 5px;
+    width: 50px;
+}
+#font-block-fixed button:hover{
+    color: #e9bc5e;
 }
