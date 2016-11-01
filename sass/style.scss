@@ -918,6 +918,9 @@ $news: 12 1/4 fluid float inside;
         left: 0;
         bottom: 0;
         color: $grey-dark;
+        &.none-bg {
+            background: none;
+        }
     }
     .answer {
         background: url("../img/icons/answer.png") no-repeat left;
@@ -1793,6 +1796,7 @@ footer {
             width: 100%;
             li {
                 float: left;
+                cursor: pointer;
                 a {
                     text-decoration: none;
                 }
@@ -1932,6 +1936,12 @@ footer {
                 &.paper {
                     background: url("../img/icons/paper.png") left center no-repeat;
                 }
+                &.purchase {
+                    background: url("../img/icons/purchase.png") left center no-repeat;
+                }
+                &.clock-load {
+                    background: url("../img/icons/clock-load.png") left center no-repeat;
+                }
             }
         }
     }
@@ -1943,6 +1953,7 @@ footer {
         }
         .active {
             color: $blue;
+            font-weight: bold;
         }
     }
     .content-news {
@@ -2141,6 +2152,13 @@ footer {
             &.cell-12 {
                 border-top: none;
                 padding: 0;
+                .purchase-block {
+                   padding: 0 0 50px 0;
+                   @include span(3); 
+                   @include breakpoint($medium) {
+                       @include span(6); 
+                   }
+                }
                 
                 .video {
                     @include span(4);
@@ -2195,14 +2213,34 @@ footer {
 
 .green {
     color: $green;
+    &.link {
+        text-decoration: none;
+        &:hover {
+           text-decoration: underline; 
+        }
+    }
 }
 
 .blue {
     color: $blue;
-    &.uppercase {
-        text-transform: uppercase;
-        font-weight: bold;
-    }
+}
+
+.grey {
+    color: $grey-dark;
+}
+
+.black {
+    color: #000;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mini-description {
+    display: block;
+    margin: 10px;
 }
 
 #font-block-fixed {
