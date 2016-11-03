@@ -13,57 +13,76 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="bower_components/responsive/build/responsive.min.css" rel="stylesheet"/>
+    <link href="bower_components/responsive/build/responsive.min.css" rel="stylesheet" />
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">Вы используете устаревший браузер. Пожалуйста, обновите <a href="http://browsehappy.com/">браузер</a>,
     чтобы улучшить свои возможности.</p>
 <![endif]-->
-
-<!--Header-->
-<header>
-    <!--Banner top-->
-    <div class="banner">
-        <img src="img/banner2.jpg" alt="баннер">
-    </div>
-    <!--Banner top END-->
-    <div class="center">
-        <div id="logo" class="cell-2">
-            <img src="img/logo.png" alt="Нур отан логотип">
+    <!-- Header block -->
+    <header>
+        <!--Banner top-->
+        <div class="banner">
+            <div id="main-banner">
+                <img src="img/text-top-banner.png" alt="баннер">
+            </div>
         </div>
-        <div class="on-menu cell-10">
-
-            <div class="left-on-menu">
-                <div class="block-top-right">
-                        <span class="date">
-                            <strong><i>11 июля, 2016</i></strong>
-                         </span>
-                    <span class="language">
+        <!--Banner top END-->
+        <div id="menu-block">
+            <div id="logo" class="cell-2">
+                <img src="img/logo.png" alt="Нур отан логотип">
+            </div>
+            <div class="on-menu cell-10">
+                <div class="left-on-menu">
+                    <div class="block-top-right">
+                        <span class="language">
                             <i>KZ</i>
                             <i class="active">RU</i>
-                            <i>EN</i>
+                            <!-- <i>EN</i> -->
                         </span>
-                    <span class="tel">
+                        <span class="tel">
                             <img src="img/icons/tel.png" alt="telephone">
                         </span>
-                    <span>
+                        <span>
                             <img src="img/icons/glasses.png" alt="glasses">
                         </span>
+                    </div>
+                </div>
+                <div class="right-on-menu">
+                    <div class="block-top-right right">
+                        <input type="text" placeholder="Я ищу..." class="search">
+                    </div>
                 </div>
             </div>
-            <div class="right-on-menu">
-                <div class="block-top-right right">
-                    <input type="text" placeholder="Я ищу..." class="search">
-                    <span class="social">
-                            <a href="#twitter" class="twitter"></a>
-                            <a href="#facebook" class="facebook"></a>
-                            <a href="#google-plus" class="google-plus"></a>
-                            <a href="#youtube" class="youtube"></a>
-                            <a href="#rss" class="rss"></a>
-                        </span>
+            <div class="menu">
+                <ul class="big-menu">
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="#">Партия</a></li>
+                    <li><a href="#">Фракция</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Программные документы</a></li>
+                    <li><a href="#">Регионы</a></li>
+                    <!-- <li><a href="#" class="red">Общественная приемная</a></li> -->
+                    <li class="last">
+                        <a href="#"><img src="img/icons/burger.png" alt="burger"></a>
+                    </li>
+                    <li class="burger">
+                        <a href="#"><img src="img/icons/burger.png" alt="burger"></a>
+                    </li>
+                </ul>
+                <ul class="small-menu">
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="#">Партия</a></li>
+                    <li><a href="#">Фракция</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Программные документы</a></li>
+                    <li><a href="#">Регионы</a></li>
+                    <li><a href="#" class="red">Общественная приемная</a></li>
+                </ul>
+                <div class="cell-login-soc">
                     <span class="login">
                             <span>
                                 <a href="#sign">
@@ -71,239 +90,246 @@
                                     <i>Войти</i>
                                 </a>
                             </span>
-                            <span><a href="#sign-up"><i>Регистрация</i></a></span>
+                    <span><a href="#sign-up"><i>Регистрация</i></a></span>
+                    </span>
+                    <span class="social">
+                            <a href="#twitter" class="twitter"></a>
+                            <a href="#facebook" class="facebook"></a>
+                            <a href="#google-plus" class="google-plus"></a>
+                            <a href="#youtube" class="youtube"></a>
+                            <a href="#rss" class="rss"></a>
                         </span>
                 </div>
             </div>
-
         </div>
-
-        <div class="menu cell-10">
-            <ul class="big-menu">
-                <li><a href="#" class="active">Главная</a></li>
-                <li><a href="#">Партия</a></li>
-                <li><a href="#">Фракция</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Программные документы</a></li>
-                <li><a href="#">Регионы</a></li>
-                <li><a href="#" class="red">Общественная приемная</a></li>
-                <li class="last"><a href="#"><span>Еще</span> <img src="img/icons/burger.png" alt="burger"></a></li>
-                <li class="burger"><a href="#"><img src="img/icons/burger.png" alt="burger"></a></li>
-            </ul>
-            <ul class="small-menu">
-                <li><a href="#" class="active">Главная</a></li>
-                <li><a href="#">Партия</a></li>
-                <li><a href="#">Фракция</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Программные документы</a></li>
-                <li><a href="#">Регионы</a></li>
-                <li><a href="#" class="red">Общественная приемная</a></li>
-            </ul>
-        </div>
-    </div>
-</header>
-<!--End header-->
-
-<!-- Main-->
-<div id="main" class="news-page">
-
-    <!--Theme blog-->
-    <div class="theme-search center">
+    </header>
+    <!-- End Header block -->
+    <!-- Main-->
+    <div id="main" class="all-video-page">
+        <!--Theme blog-->
+        <div id='theme-blog' class="theme-search center">
             <div class="left-theme">
-                <h1>Новости</h1>
+                <h1 class="paper">Новости</h1>
             </div>
             <div class="right-theme">
                 <input type="text" placeholder="Я ищу...">
                 <button type="button">Найти</button>
             </div>
+            <div class="clearfix"></div>
         </div>
-    <!--End blog-->
-
-    <!--News-->
-    <div class="center" id="news">
-            <div class="theme">
-                <ul>
-                    <li><a href="#">Все новости</a></li>
-                    <li><a href="#">Новости регионов</a></li>
-                    <li><a href="#">Пресс-релизы</a></li>
-                    <li><a href="#">Анонсы</a></li>
-                    <li><a href="#">Опрос</a></li>
-                    <li class="right"><a href="#" class="active">Календарь <span class="calendar active"></span></a>
-                    </li>
-                </ul>
-            </div>
+        <!--Theme block-->
+        <div id="theme" class="theme center">
+            <ul>
+                <li><span class="active">Все новости</span></li>
+                <li><span>Новости регионов</span></li>
+                <li><span>Пресс-релизы</span></li>
+                <li><span>Пресс-релизы</span></li>
+                <li><span>Анонсы</span></li>
+                <li><span>Опрос</span></li>
+                <li class="right"><a href="#" class="active">Календарь <span class="calendar active"></span></a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <!--End theme block-->
+        <!--Main video-->
+        <div id="main-video" class="center none-margin-top">
             <div class="content-news">
-                <div id="blocks-news" class="cell-8">
-                    <h2>XVI съезд партии «Нур Отан» под председательством
-                        Главы государства</h2>
-                    <div>
-                        <storng class="category">Политика</storng>
-                        <span class="date-news">1 июля, 2016</span>
-                        <img src="img/icons/shared-grey.png" alt="shared" class="right">
-                    </div>
-                    <div class="large-block">
-                        <img src="img/top-block/conference.jpg" alt="конференция">
-                    </div>
-                    <div class="description-topic">
-                        <p>
-                            В областном филиале партии «Нұр Отан» состоялось расширенное заседание депутатской фракции в
-                            Павлодарском городском маслихате, в ходе которого партийцами был рассмотрен проект
-                            реализации генерального плана областного центра.
-                        </p>
-                    </div>
-                    <div class="description">
-                        <p>
-                            На заседании приняли участие первый заместитель областного филиала партии Илья Теренченко,
-                            руководитель депутатской фракции партии в гормаслихате Найля Ахметова, руководитель
-                            управления архитектуры и градостроительства области Андрей Балашов, а также представители
-                            других государственных органов.</p>
-                        <p>По информации представителя разработчика документа, директора ТОО «Геокарта Dataplus» г.
-                            Алматы Людмилы Кузнецовой генплан города Павлодара разработан в соответствии с требованиями
-                            законодательства.</p>
-                        <p>«Генеральный план разработан на срок до 2032 года. К этому моменту прирост населения
-                            ожидается свыше 55 тысяч человек. В связи с этим предусмотрено многоэтажное жилищное
-                            строительство. В первую очередь предлагается завершение реконструкции района Алюминстрой
-                            (мкр. «Сарыарқа») и мкр. «Достық»», - рассказала Людмила Кузнецова.</p>
-                        <p>Также планируется полная реконструкция улицы «1 Мая». Это позволит разгрузить улицу от
-                            транспортных потоков и снизить загрязнение воздуха.</p>
-                        <p>Все права защищены.</p>
-                        <p>При использовании материалов nurotan.kz гиперссылка обязательна.</p>
-                        <p>При использовании материалов nurotan.kz:</p>
-                        <p>
-                            - в печатных изданиях или в иных формах на материальных носителях - бумага, пленка и т.п.,
-                            пользователь обязан в каждом случае указывать, что источником материалов является
-                            электронный портал www.nurotan.kz.
-                        </p>
-                        <div class="soc-set">
-                            <a href="#facebook" class="facebook"></a>
-                            <a href="#vk" class="vk"></a>
-                            <a href="#google" class="google"></a>
-                            <a href="#odn" class="odn"></a>
-                            <a href="#twitter" class="twitter"></a>
+                <div id="blog" class="cell-12 none-margin-top">
+                    <div class="purchase-block cell-medium-12">
+                        <div class="large-block none-margin-top h-auto">
+                            <span class="category"><i>Политика</i></span>
+                            <img src="img/top-block/conference.jpg" alt="конференция">
+                            <div class="topic">
+                                <h2 class='small-text'>Заседание Коалиции Демократических сил  Жамбылской </h2>
+                                <span class="date left-date"><i>6 июля, 2016</i></span>
+                            </div>
                         </div>
+                    </div>
+                    <div class="purchase-block cell-medium-12">
+                        <div class="large-block none-margin-top h-auto">
+                            <span class="category"><i>Политика</i></span>
+                            <img src="img/top-block/conference.jpg" alt="конференция">
+                            <div class="topic">
+                                <h2 class='small-text'>Заседание Коалиции Демократических сил  Жамбылской </h2>
+                                <span class="date left-date"><i>6 июля, 2016</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purchase-block cell-medium-12">
+                        <div class="large-block none-margin-top h-auto">
+                            <span class="category"><i>Политика</i></span>
+                            <img src="img/top-block/conference.jpg" alt="конференция">
+                            <div class="topic">
+                                <h2 class='small-text'>Заседание Коалиции Демократических сил  Жамбылской </h2>
+                                <span class="date left-date"><i>6 июля, 2016</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purchase-block cell-medium-12">
+                        <div class="large-block none-margin-top h-auto">
+                            <span class="category"><i>Политика</i></span>
+                            <img src="img/top-block/conference.jpg" alt="конференция">
+                            <div class="topic">
+                                <h2 class='small-text'>Заседание Коалиции Демократических сил  Жамбылской </h2>
+                                <span class="date left-date"><i>6 июля, 2016</i></span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
+                    </div>
+                  <div class="purchase-block">
+                        <span class="grey uppercase">Политика</span>
+                        <span class="date none-bg">
+                                    <strong><i>11 июля, 2016</i></strong>
+                            </span>
+                        <p>
+                            <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
+побывал в Павлодаре
+                            </a>
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
+                        
                     </div>
                 </div>
-                <div id="blog" class="cell-4">
-                    <h2 class="see-also">Смотрите также</h2>
-                    <div class="cell-12">
-                        <div class="medium-block">
-                            <span class="category"><i>Политика</i></span>
-                            <img src="img/center-block/region.jpg" alt="регион">
-                            <div class="topic">
-                                <h2>Автопробег в Костанайской области</h2>
-                                <span class="date"><i>6 июля, 2016</i></span>
-
-                            </div>
-                        </div>
-                        <div class="medium-block">
-                            <span class="category"><i>Политика</i></span>
-                            <img src="img/center-block/region.jpg" alt="регион">
-                            <div class="topic">
-                                <h2>Автопробег в Костанайской области</h2>
-                                <span class="date"><i>6 июля, 2016</i></span>
-
-                            </div>
-                        </div>
-                        <div class="medium-block-2">
-                            <img src="img/top-block/electron.jpg" alt="Общественная Приемная">
-                            <div class="topic-electron">
-                                <div class="content-app">
-                                    <span>Электронная</span>
-                                    <h3><i>Общественная Приемная</i></h3>
-                                    <span>партии “Нұр Отан”</span>
-                                    <ul>
-                                        <li>
-                                            <a href="#"><img src="img/icons/edit.png" alt="edit"> Подать обращение</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/icons/persons.png" alt="persons"> Записаться на
-                                                прием</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/icons/question.png" alt="question"> Задать вопрос</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="medium-block-2">
-                            <img src="img/top-block/partia.jpg" alt="партия">
-                        </div>
-
-                    </div>
-                </div>
+                <button class="load-more" type="button">Загрузить еще</button>
                 <div class="clearfix"></div>
             </div>
         </div>
-    <!--End News-->
+        <!--End main video-->
 
-    <!--See see also blog-->
-    <div id="see-also-blog">
-        <h2 class="see-also">Смотрите также</h2>
-        <div class="blog-description-news">
-            <div class="mini-news cell-3">
-
-                <storng class="category">Политика</storng>
-                <span class="date-news">1 июля, 2016</span>
-                <p>Автопробег «Ұлы Дала азаматтары» побывал в Павлодаре</p>
-                <a href="#" class="shared"><img src="img/icons/shared-grey.png" alt="shared"></a>
-            </div>
-            <div class="mini-news cell-3">
-
-                <storng class="category">Политика</storng>
-                <span class="date-news">1 июля, 2016</span>
-                <p>Автопробег «Ұлы Дала азаматтары» побывал в Павлодаре</p>
-                <a href="#" class="shared"><img src="img/icons/shared-grey.png" alt="shared"></a>
-            </div>
-            <div class="mini-news cell-3">
-
-                <storng class="category">Политика</storng>
-                <span class="date-news">1 июля, 2016</span>
-                <p>Автопробег «Ұлы Дала азаматтары» побывал в Павлодаре</p>
-                <a href="#" class="shared"><img src="img/icons/shared-grey.png" alt="shared"></a>
-            </div>
-            <div class="mini-news cell-3">
-
-                <storng class="category">Политика</storng>
-                <span class="date-news">1 июля, 2016</span>
-                <p>Автопробег «Ұлы Дала азаматтары» побывал в Павлодаре</p>
-                <a href="#" class="shared"><img src="img/icons/shared-grey.png" alt="shared"></a>
-            </div>
-            <div class="mini-news cell-3">
-
-                <storng class="category">Политика</storng>
-                <span class="date-news">1 июля, 2016</span>
-                <p>Автопробег «Ұлы Дала азаматтары» побывал в Павлодаре</p>
-                <a href="#" class="shared"><img src="img/icons/shared-grey.png" alt="shared"></a>
-            </div>
-            <div class="mini-news cell-3">
-
-                <storng class="category">Политика</storng>
-                <span class="date-news">1 июля, 2016</span>
-                <p>Автопробег «Ұлы Дала азаматтары» побывал в Павлодаре</p>
-                <a href="#" class="shared"><img src="img/icons/shared-grey.png" alt="shared"></a>
-            </div>
-            <div class="mini-news cell-3">
-
-                <storng class="category">Политика</storng>
-                <span class="date-news">1 июля, 2016</span>
-                <p>Автопробег «Ұлы Дала азаматтары» побывал в Павлодаре</p>
-                <a href="#" class="shared"><img src="img/icons/shared-grey.png" alt="shared"></a>
-            </div>
-            <div class="mini-news cell-3">
-
-                <storng class="category">Политика</storng>
-                <span class="date-news">1 июля, 2016</span>
-                <p>Автопробег «Ұлы Дала азаматтары» побывал в Павлодаре</p>
-                <a href="#" class="shared"><img src="img/icons/shared-grey.png" alt="shared"></a>
-            </div>
-            <button class="load-more" type="button">Загрузить еще</button>
-        </div>
-    </div>
-    <!--End see also blog-->
-
-    <!--Category block-->
-    <div id="category-blog">
+         <!--Category blog-->
+    <div class="category-blog">
+        <div class="cell-6">
         <ul>
             <li><a href="#" class="active">Все категории</a></li>
             <li><a href="#">Популярное</a></li>
@@ -361,93 +387,346 @@
                 <storng class="category">Развитие</storng>
 
             </div>
-            <button class="load-more" type="button">Показать все</button>
+            <button class="load-more" type="button">Показать все <span class="theme-load">Категории</span></button>
         </div>
-    </div>
-    <!--End category block-->
-
-    <!--Slider links-->
-    <div id="slider-block" class="slider-bottom">
-        <div class="item">
-            <a href="#">www.akorda.kz</a>
-            <span>Официальный сайт Президента РК</span>
         </div>
-        <div class="item">
-            <a href="#">www.ipp.kz</a>
-            <span>Официальный сайт Президента РК</span>
-        </div>
-        <div class="item">
-            <a href="#">www.nurmedia.kz</a>
-            <span>Официальный сайт Президента РК</span>
-        </div>
-        <div class="item">
-            <a href="#">www.zhasotan.kz</a>
-            <span>Официальный сайт Президента РК</span>
-        </div>
-        <div class="item">
-            <a href="#">www.zhasotan.kz</a>
-            <span>Официальный сайт Президента РК</span>
-        </div>
-        <div class="item">
-            <a href="#">www.akorda.kz</a>
-            <span>Официальный сайт Президента РК</span>
-        </div>
-        <div class="item">
-            <a href="#">www.akorda.kz</a>
-            <span>Официальный сайт Президента РК</span>
-        </div>
-    </div>
-    <!--End Slider links-->
-
-</div>
-
-
-<!--Footer-->
-<footer>
-    <div class="menu-bottom">
+        <div class="cell-6">
         <ul>
-            <li><a href="#" class="active">Главная</a></li>
-            <li><a href="#">Партия</a></li>
-            <li><a href="#">Фракция</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Программные документы</a></li>
-            <li><a href="#">Регионы</a></li>
-            <li><a href="#">Общественная приемная</a></li>
+            <li><a href="#" class="active">Облако тэгов</a></li>
+            </li>
         </ul>
+        <div class="blog-description-news">
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <div class="tag cell-5">
+
+                <storng class="category">Астана</storng>
+
+            </div>
+            <button class="load-more" type="button">Показать все <span class="theme-load">ТЭГИ</span></button>
+        </div>
+        </div>
     </div>
-    <div class="cell-2">
-        <img src="img/logo-2.png" alt="Нур отан логотип" class="logo2">
+    <!--End category blog-->
+
+     <!--Video-->
+    <div id="videos">
+        <h2><i>Видео</i></h2>
+        <div class="columns-video">
+            <div class="video item">
+            <a href="https://www.youtube.com/embed/YjUXZjTjJ9E" data-modal-title="Коротко о Плане нации - 100 конкретных шагов">
+            <img src="http://img.youtube.com/vi/YjUXZjTjJ9E/0.jpg" >
+                </a>
+
+                <p>Коротко о Плане нации - 100 конкретных шагов</p>
+                <span class="date">
+                    <strong><i>11 июля, 2016</i></strong>
+                 </span>
+                <span class="answer">
+                    <strong><i>12</i></strong>
+                </span>
+            </div>
+            <div class="video item">
+            <a href="https://www.youtube.com/embed/YjUXZjTjJ9E" data-modal-title="Коротко о Плане нации - 100 конкретных шагов">
+                <img src="http://img.youtube.com/vi/YjUXZjTjJ9E/0.jpg" >
+                </a>
+                <p>Коротко о Плане нации - 100 конкретных шагов</p>
+                <span class="date">
+                    <strong><i>11 июля, 2016</i></strong>
+                 </span>
+                <span class="answer">
+                    <strong><i>12</i></strong>
+                </span>
+            </div>
+            <div class="video item">
+            <a href="https://www.youtube.com/embed/YjUXZjTjJ9E" data-modal-title="Коротко о Плане нации - 100 конкретных шагов">
+                <img src="http://img.youtube.com/vi/YjUXZjTjJ9E/0.jpg">
+                </a>
+                <p>Коротко о Плане нации - 100 конкретных шагов</p>
+                <span class="date">
+                    <strong><i>11 июля, 2016</i></strong>
+                 </span>
+                <span class="answer">
+                    <strong><i>12</i></strong>
+                </span>
+            </div>
+            <div class="video item"><a href="https://www.youtube.com/embed/YjUXZjTjJ9E" data-modal-title="Коротко о Плане нации - 100 конкретных шагов">
+                <img src="http://img.youtube.com/vi/YjUXZjTjJ9E/0.jpg" >
+                </a>
+                <p>Коротко о Плане нации - 100 конкретных шагов</p>
+
+                <span class="date">
+                    <strong><i>11 июля, 2016</i></strong>
+                 </span>
+                <span class="answer">
+                    <strong><i>12</i></strong>
+                </span>
+            </div>
+            <div class="video item"><a href="https://www.youtube.com/embed/YjUXZjTjJ9E" data-modal-title="Коротко о Плане нации - 100 конкретных шагов">
+                <img src="http://img.youtube.com/vi/YjUXZjTjJ9E/0.jpg" >
+                </a>
+                <p>Коротко о Плане нации - 100 конкретных шагов</p>
+                <span class="date">
+                    <strong><i>11 июля, 2016</i></strong>
+                 </span>
+                <span class="answer">
+                    <strong><i>12</i></strong>
+                </span>
+            </div>
+            <div class="video item"><a href="https://www.youtube.com/embed/YjUXZjTjJ9E" data-modal-title="Коротко о Плане нации - 100 конкретных шагов">
+                <img src="http://img.youtube.com/vi/YjUXZjTjJ9E/0.jpg" >
+                </a>
+                <p>Коротко о Плане нации - 100 конкретных шагов</p>
+                <span class="date">
+                    <strong><i>11 июля, 2016</i></strong>
+                 </span>
+                <span class="answer">
+                    <strong><i>12</i></strong>
+                </span>
+            </div>
+            <div class="video item"><a href="https://www.youtube.com/embed/YjUXZjTjJ9E" data-modal-title="Коротко о Плане нации - 100 конкретных шагов">
+                <img src="http://img.youtube.com/vi/YjUXZjTjJ9E/0.jpg" >
+                </a>
+                <p>Коротко о Плане нации - 100 конкретных шагов</p>
+                <span class="date">
+                    <strong><i>11 июля, 2016</i></strong>
+                 </span>
+                <span class="answer">
+                    <strong><i>12</i></strong>
+                </span>
+            </div>
+            <div class="video item"><a href="https://www.youtube.com/embed/YjUXZjTjJ9E" data-modal-title="Коротко о Плане нации - 100 конкретных шагов">
+                <img src="http://img.youtube.com/vi/YjUXZjTjJ9E/0.jpg" >
+                </a>
+                <p>Коротко о Плане нации - 100 конкретных шагов</p>
+                <span class="date">
+                    <strong><i>11 июля, 2016</i></strong>
+                 </span>
+                <span class="answer">
+                    <strong><i>12</i></strong>
+                </span>
+            </div>
+        </div>
     </div>
-    <div class="block-top-right">
-        <input type="text" placeholder="Я ищу..." class="search">
-        <span class="social">
+    <!--End video-->
+
+    <!--Photo-->
+    <div id="photo" class="center">
+        <h2><i>Фото</i></h2>
+        <div class="black-block">
+            <div class="cell-6 cell-medium-12 last">
+                <div class="large-block">
+                    <img src="img/bottom-block/politic.jpg" alt="политик">
+                    <div class="topic">
+                        <h2>Церемония награждения лучших спортсменов по национальным видам спорта «Алтын Тұғыр -
+                            2015»</h2>
+                        <a href="">
+                            <img src="img/icons/instagram.png" alt="instagram" class="right">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cell-6 cell-medium-12 last">
+                <div class="cell-6">
+                    <div class="medium-block">
+                        <div class="category">
+                            <a href=""><img src="img/icons/instagram.png" alt="instagram"></a>
+                        </div>
+                        <img src="img/bottom-block/politic-2.jpg" alt="политик">
+                        <div class="topic">
+                            <h2>Внеочередной Съезд партии “Нұр Отан”</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-6">
+                    <div class="medium-block">
+                        <div class="category">
+                            <a href=""><img src="img/icons/instagram.png" alt="instagram"></a>
+                        </div>
+                        <img src="img/bottom-block/politic-3.jpg" alt="политик">
+                        <div class="topic">
+                            <h2>Казахстанцы - Герои Советского Союза</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-6">
+                    <div class="medium-block-2">
+                        <div class="category">
+                            <a href=""><img src="img/icons/instagram.png" alt="instagram"></a>
+                        </div>
+                        <img src="img/bottom-block/politic-4.jpg" alt="политик">
+                        <div class="topic">
+                            <h2>“Большая Евразия: Территория диалога молодежи”</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-6">
+                    <div class="medium-block-2">
+                        <div class="category">
+                            <a href=""><img src="img/icons/instagram.png" alt="instagram"></a>
+                        </div>
+                        <img src="img/bottom-block/politic-5.jpg" alt="политик">
+                        <div class="topic">
+                            <h2>Республиканский конкурс "Лучшая первичная партийная организация"</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--End Photo-->
+   
+        <!--Slider links-->
+        <div id="slider-block" class="slider-bottom">
+            <div class="item">
+                <a href="#">www.akorda.kz</a>
+                <span>Официальный сайт Президента РК</span>
+            </div>
+            <div class="item">
+                <a href="#">www.ipp.kz</a>
+                <span>Официальный сайт Президента РК</span>
+            </div>
+            <div class="item">
+                <a href="#">www.nurmedia.kz</a>
+                <span>Официальный сайт Президента РК</span>
+            </div>
+            <div class="item">
+                <a href="#">www.zhasotan.kz</a>
+                <span>Официальный сайт Президента РК</span>
+            </div>
+            <div class="item">
+                <a href="#">www.zhasotan.kz</a>
+                <span>Официальный сайт Президента РК</span>
+            </div>
+            <div class="item">
+                <a href="#">www.akorda.kz</a>
+                <span>Официальный сайт Президента РК</span>
+            </div>
+            <div class="item">
+                <a href="#">www.akorda.kz</a>
+                <span>Официальный сайт Президента РК</span>
+            </div>
+        </div>
+        <!--End Slider links-->
+    </div>
+    <!-- End Main -->
+    <!--Footer-->
+    <footer>
+        <div class="menu-bottom">
+            <ul>
+                <li><a href="#" class="active">Главная</a></li>
+                <li><a href="#">Партия</a></li>
+                <li><a href="#">Фракция</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Программные документы</a></li>
+                <li><a href="#">Регионы</a></li>
+                <li><a href="#">Общественная приемная</a></li>
+            </ul>
+        </div>
+        <div class="cell-2">
+            <img src="img/logo-2.png" alt="Нур отан логотип" class="logo2">
+        </div>
+        <div class="block-top-right">
+            <input type="text" placeholder="Я ищу..." class="search">
+            <span class="social">
                 <a href="#twitter" class="twitter"></a>
                 <a href="#facebook" class="facebook"></a>
                 <a href="#google-plus" class="google-plus"></a>
                 <a href="#youtube" class="youtube"></a>
                 <a href="#rss" class="rss"></a>
             </span>
+        </div>
+        <div class="copright">
+            <span>© 2016  Партия “Нұр Отан”. Все права защищены.</span>
+        </div>
+    </footer>
+    <!--Footer END-->
+    <!--Start increase and decrease-->
+    <div id="font-block-fixed">
+        <button id="increase">+</button><br />
+        <button id="decrease">-</button>
     </div>
-    <div class="copright">
-        <span>© 2016  Партия “Нұр Отан”. Все права защищены.</span>
-    </div>
-</footer>
-<!--Footer END-->
-
-
-
-<!-- End Main -->
-<!--Lib js-->
-<script src="js/vendor/jquery-1.12.0.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/slider/owl.carousel.min.js"></script>
-<script src="bower_components/responsive/build/responsive.min.js"></script>
-<!--Lib js END-->
-<!--My script-->
-<script src="js/main.js"></script>
-<script src="js/tab.js"></script>
-<!--My script End-->
-<script>
+    <!--End increase and decrease-->
+    <!--Lib js-->
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/slider/owl.carousel.min.js"></script>
+    <script src="bower_components/responsive/build/responsive.min.js"></script>
+    <!--Lib js END-->
+    <!--My script-->
+    <script src="js/main.js"></script>
+    <!--<script src="js/tab.js"></script>-->
+    <!--My script End-->
+    <script>
     $(document).ready(function () {
         $('.owl-carousel').owlCarousel({
             loop: true,
