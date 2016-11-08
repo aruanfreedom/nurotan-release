@@ -2,7 +2,6 @@ $( document ).ready(function() {
 
     $(".burger").on('click', function(){
         $('.small-menu').toggle();
-        console.log("ok");
     });
 
 function resizeText(multiplier) {
@@ -28,6 +27,14 @@ $('#increase').on('click', function () {
 
 $('#decrease').on('click', function () {
     resizeText(-1);
+});
+
+$('.small-menu li').on('click', function () {
+    if ( $(this).find('span').is('.arrow-menu') ) {
+        $(this).find('.lv-1, .lv-2').toggle();
+    } else {
+        console.log('ni');
+    }
 });
 
 });

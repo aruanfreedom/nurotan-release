@@ -316,6 +316,74 @@ header {
                 @include breakpoint($large-note-big) {
                     padding-right: 5%;
                 }
+                .arrow-menu {
+                    float: right;
+                    padding: 0 3px;
+                }
+                li {
+                    position: relative;
+                    ul.lv-1 {
+                        display: none; 
+                        text-align: left;
+                        background: #fff;
+                        border: 1px solid $grey-dark;
+                        padding: 0 0 0 0;
+                        /*border-radius: 5px;*/
+                        position: absolute;
+                        li {
+                            display: block;
+                            padding: 0 0 0 0;
+                            position: relative;
+                            min-width: 200px;
+                            a {
+                                display: block;
+                                padding: 10px 20px;
+                                &:hover {
+                                    background: $grey;
+                                }
+                            } 
+                            ul.lv-2 {
+                                display: none;
+                                text-align: left;
+                                background: #fff;
+                                border: 1px solid $grey-dark;
+                                padding: 0 0 0 0;
+                                /*border-radius: 5px;*/
+                                position: absolute;
+                                top: 0;
+                                left: 100%;
+                                li {
+                                    min-width: 200px;
+                                    ul.lv-3 {
+                                        padding: 0;
+                                        display: none;
+                                        li a{
+                                            color: #000;
+                                            padding: 5px 30px;
+                                        }
+                                    }
+                                    &:hover {
+                                        ul.lv-3 {
+                                            display: block;                                           
+                                        }
+                                    }
+                                }
+                            } 
+                            &:hover {
+                                ul.lv-2 {
+                                    display: block;
+                                }
+                            }                           
+                        }
+                    }
+                    &:hover {
+                        ul.lv-1 {
+                            display: block; 
+                        }
+                    }
+                }
+                    
+              
                 li {
                     display: inline-block;
                     padding: 0px 0% 0 1%;
@@ -386,23 +454,47 @@ header {
                 background: #fff;
                 display: none;
                 @include breakpoint($medium) {
-                    padding: 0 10px;
                     margin: 0;
                     list-style: none;
-                    li {
+                    .lv-1, .lv-2 {
+                        display: none;
+                        list-style: none;
+                        a {
+                            display: block;
+                            padding: 10px 20px;
+                        }
+                    }
+                    li.punkt-1 {
                         text-align: right;
+                        padding: 0 10px;
+                        &:hover, &:active {
+                            background: $grey;
+                            padding: 5px 0;
+                            a {
+                                color: $blue;
+                            }
+                        }
                         a {
                             color: #000;
                             display: block;
                             font-weight: bold;
                             text-decoration: none;
-                            padding: 5px 0px 5px 0;
+                            padding: 5px;
                             font-size: 0.9em;
                             z-index: 2;
-                            &.active,
-                            &:hover {
-                                color: $blue;
-                                background: $grey;
+                        }
+                        ul {
+                            background: #fff;
+                            padding: 10px;
+                            margin: 10px;
+                            li {
+                                border: 1px solid #000;
+                                &:hover {
+                                   background: $grey;                                   
+                                }
+                                a {
+                                    color: #000;
+                                }
                             }
                         }
                     }
