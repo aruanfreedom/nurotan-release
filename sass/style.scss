@@ -23,6 +23,8 @@ $yellow: #fce300;
 $green: #02869b;
 $red: #b70000;
 $light-green: #ececec;
+$silver: #b3b9c3;
+$blue-light: #d8dfeb;
 // Size columns
 $large: 1366px 1500px;
 $large-note-big: 1500px;
@@ -1869,6 +1871,154 @@ footer {
     outline: -webkit-focus-ring-color auto 0px;
 }
 
+.textarea-block {
+    textarea {
+        overflow-y: scroll;
+        height: 185px;
+        width: 100%;
+    }
+}
+
+.filebutton-block {
+    label, input {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    input {
+        background: #fff;
+        padding: 10px 40px;
+        height: 50px;
+        width: 30%;
+        @include breakpoint($medium) {
+            padding: 0;
+        }
+    }
+}
+
+.group-form {
+    background: $silver;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    @include breakpoint($medium) {
+        .cell-sm-12 {
+            @include span(12);
+        }
+    }
+}
+
+.select-block {
+    label {
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+    }
+    select {
+        height: 56px;
+        width: 100%;
+        option {
+           height: 56px; 
+        }
+    }
+}
+.radiobutton-block {
+    position: relative;
+    padding: 20px 10px 10px 10px;
+    .radio {
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    label {
+        display: inline-block;
+    }
+    label.label-radio {
+        color: #000;
+        font-weight: bold;
+        margin-left: 30px;
+        font-size: 1em;
+       
+    }
+    input {
+        position: absolute;
+        top: 0px;
+    }
+}
+.checbox-hide-variants {
+    position: relative;
+    width: 250px;
+    label, input {
+        display: inline-block;
+    }
+    input {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    label.label-checkbox {
+        color: #000;
+        font-weight: bold;
+        margin-left: 30px;
+        font-size: 1em;
+        padding: 20px;
+    }
+}
+
+.blue-light {
+    background: $blue-light;
+}
+
+.hide-variants {
+    display: none;
+}
+
+#registration {
+    margin-top: 50px;
+    padding: 15px 15px;
+    .cell-2 {
+        @include span(2);
+    }
+    .cell-10 {
+        @include span(10);
+    }
+    .cell-9 {
+        @include span(9);
+    }
+    h2 {
+        background: url('../img/icons/arrow-3.png') right center no-repeat;
+        margin: 0;
+        color: #fff;
+        font-size: 1em;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1em;
+        color: #fff;
+        padding: 20px 0 20px 45px
+    }
+    button {
+        font-size: 0.85em;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 14px auto;
+        width: 90%;
+    }
+    .left-theme {
+        @include breakpoint($medium) {
+            @include span(12);
+        }
+    }
+    @include breakpoint($medium) {
+        .cell-sm-12 {
+            @include span(12);
+        }
+        .cell-sm-8 {
+            @include span(8);
+        }
+        .cell-sm-4 {
+            @include span(4);
+        }
+    }
+}
+
 .news-page,
 .video-page,
 .all-video-page,
@@ -1880,6 +2030,9 @@ footer {
         background: $light-green;
         font-family: $openSans;
         padding: 5px 5px;
+        &.green-bg {
+             background: #02859b;
+        }
         .left-theme {
             @include span(3);
             h1 {
@@ -2098,6 +2251,9 @@ footer {
                 }
                 &.photo-icon {
                     background: url("../img/icons/photo.png") left center no-repeat;
+                }
+                &.reg-icon {
+                    background: url("../img/icons/reg-white.png") left center no-repeat;
                 }
             }
         }
@@ -2579,6 +2735,10 @@ button {
         &.btn-blue {
             color: #fff;
             background: $blue;
+        }
+        &.btn-yellow {
+            color: #000;
+            background: $yellow;
         }
     }
 }

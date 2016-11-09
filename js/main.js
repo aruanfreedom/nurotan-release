@@ -32,9 +32,20 @@ $('#decrease').on('click', function () {
 $('.small-menu li').on('click', function () {
     if ( $(this).find('span').is('.arrow-menu') ) {
         $(this).find('.lv-1, .lv-2').toggle();
-    } else {
-        console.log('ni');
-    }
+    } 
 });
+
+var checked = function () {
+    var clickChecked = $( ".click-checked:checked" ).length;
+    if (clickChecked) {
+        $('.hide-variants').show();
+        $('.checbox-hide-variants').addClass('blue-light');
+    } else {
+        $('.hide-variants').hide();
+        $('.checbox-hide-variants').removeClass('blue-light');
+    }
+};
+
+$('.click-checked').on('click', checked);
 
 });
