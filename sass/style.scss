@@ -1356,7 +1356,9 @@ $news: 12 1/4 fluid float inside;
         }
     }
 }
-
+.green-block-color {
+    background: #027284;
+}
 $green-block: 12 1/30 fluid float inside;
 #green-block {
     @include layout($green-block);
@@ -2663,7 +2665,39 @@ footer {
     right: 0;
     z-index: 100;
 }
-
+.photo-leader {
+    overflow-y: auto;
+    padding: 30px;
+    max-height: 500px;
+    .large-block {
+        img {
+            width: auto;
+        }
+    }
+}
+.quotations {
+    background: url("../img/quotations-bg.png") repeat-y left;
+    margin: 0 30px;
+    padding: 30px 0;
+    .quotations-content {
+        overflow-y: scroll;
+        padding-left: 125px;
+        height: 550px;
+        .quotations-article {
+            background: url("../img/icons/quotations.png") no-repeat left top;
+            padding: 0 125px 0 80px;
+            margin-bottom: 50px;
+            p {
+                color: #fff;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            small {
+                color: #fff;
+            }
+        }
+    }
+}
 .content-vertical-tabs {
     background: #027284;
     padding: 30px;
@@ -2673,6 +2707,9 @@ footer {
     .content-vertical-tabs-scroll {
         overflow-y: scroll;
         height: 500px;
+        h3 {
+            color: #fff;
+        }
         .content-vertical-img {
             background: url(../img/vertical-img.jpg) left top no-repeat #02869b;
             text-align: center;
@@ -2751,7 +2788,7 @@ footer {
     padding: 10px 30px;
     cursor: pointer;
     &:hover {
-        background: $green;
+        background: #027284;
     }
     .date {
         left: 0;
