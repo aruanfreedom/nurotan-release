@@ -48,4 +48,21 @@ var checked = function () {
 
 $('.click-checked').on('click', checked);
 
+var tabsClick = function() {
+     $('.columns-developments').owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 10,
+        nav: true,
+        pagination: true,
+        navText: ["<", ">"]
+    });
+};
+    var tabsClickTime = function () {
+        setTimeout(tabsClick, 500);
+    };
+
+    $('#tabs-click').on('click', tabsClickTime);
+
 });
+
