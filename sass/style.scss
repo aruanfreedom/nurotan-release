@@ -2272,6 +2272,26 @@ footer {
     }
 }
 
+
+.table-grey {
+    overflow-x: auto;
+    table {
+        border: 20px solid $grey;
+        width: 1114px;
+        .header {
+            border: 20px solid $grey;
+        }
+        td, th {
+            padding: 10px 30px;
+            border: 3px solid $grey;
+            span {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
 .video-page, .all-video-page, .hot-line-page {
     #blocks-news {
         @include breakpoint($medium) {
@@ -2658,7 +2678,9 @@ footer {
     display: block;
     margin: 10px;
 }
-
+.white {
+    color: #fff !important;
+}
 #font-block-fixed {
     position: fixed;
     top: 0;
@@ -2991,6 +3013,9 @@ button {
 .border-grey {
     border: 1px solid $grey;
     margin-bottom: 20px;
+    button {
+        margin: 20px auto;
+    }
 }
 .none-margin {
     margin: 0 0 0 0;
@@ -3003,4 +3028,9 @@ button {
 }
 .cell-12 {
     @include span(12);
+}
+
+#imap {
+    height: 500px;
+    width: 100%;
 }
