@@ -11,7 +11,7 @@ $pt: 'PT Serif',
 serif;
 $susy: ( columns: 12, gutters: 1/21, container: 100%, math: fluid, output: float, gutter-position: inside, container-position: center, debug: ( image: hide, color: #faf8ff, output: background, toggle: top right, ));
 
-/*
+/*  
     Variables
 */
 
@@ -3026,10 +3026,6 @@ button {
 .leadership-f {
     background: url("../img/leadership-frank/leadership-bg.jpg") no-repeat top center;
     background-size: cover;
-    // min-height: 271px;
-    img {
-        // height: 271px;
-    }
 }
 .center-item-block {
     margin: 0 auto;
