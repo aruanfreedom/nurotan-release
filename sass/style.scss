@@ -1673,8 +1673,10 @@ $videos: 12 1/10 fluid float inside;
         float: right;
     }
 }
-
-#photo {
+.purchase-block {
+    position: relative;
+}
+#photo, #more {
     h2 {
         margin: 0 0 15px 0;
         i {
@@ -2271,7 +2273,35 @@ footer {
         }
     }
 }
-
+ .description-topic {
+                background: $light-green;
+                padding: 5px;
+            }
+#regions-leader {
+   @include push(3);
+    @include breakpoint($medium) {
+        @include push(0); 
+    }
+}
+.twitter-contact {
+    margin-top: 20px;
+    span {
+        background: $grey;
+        padding: 10px 20px;
+        border-radius: 20px;
+        position: relative;
+        &:before {
+            content: "";
+            background: url("../img/icons/twitter-trangle.png") no-repeat center center;
+            width: 20px;
+            height: 20px; 
+            position: absolute;
+    left: -13px;
+    top: 2px;
+        }
+    }
+    
+}
 
 .table-grey {
     overflow-x: auto;
@@ -2557,15 +2587,18 @@ footer {
             &.cell-12 {
                 border-top: none;
                 padding: 0;
-                .purchase-block {
-                   
+                .purchase-block {                   
                    padding: 0 0 50px 0;
                    @include span(3); 
                    @include breakpoint($medium) {
                        @include span(6); 
                    }
+                   &.cell-6 {
+                      @include span(6); 
+                   }
                    p {
                        position: relative;
+                       padding-right: 10px;
                    }
                 }
                 
