@@ -32,6 +32,9 @@ $large-note-big: 1500px;
 $large-note: 1280px 1500px;
 $medium: 0px 1280px;
 $small: 0px 960px;
+
+$width-all: 1118px;
+
 body {
     @include container();
     min-width: 442px;
@@ -51,9 +54,11 @@ header {
         background: url(../img/banner-top.png) repeat-x top left;
     }
     .banner {
-        // margin-bottom: 20px;
         @include span(10);
-        @include push(1);
+        /*@include push(1);*/
+        float: none;
+        max-width: $width-all;
+        margin: 0 auto;
         @include breakpoint ($medium) {
             @include full();
             @include push(0);
@@ -88,11 +93,13 @@ header {
         position: relative;
         height: 174px;
         @include span(10);
-        @include push(1);
         padding: 0;
         padding-top: 61px;
         padding-right: 279px;
         border-bottom: 2px solid #000;
+        float: none;
+        max-width: $width-all;
+        margin: -53.1px auto auto auto;
         @include breakpoint($medium) {
             background: none;
             @include full();
@@ -532,6 +539,9 @@ header {
 }
 
 #top-news {
+    float: none;
+    max-width: $width-all;
+    margin: 0 auto;
     .cell-12 {
         @include span(12);
     }
@@ -916,6 +926,9 @@ header {
 
 $news: 12 1/4 fluid float inside;
 #news {
+    max-width: $width-all;
+    float: none;
+    margin: 0 auto;
     .cell-6 {
         @include layout($news);
     }
@@ -1581,7 +1594,10 @@ $videos: 12 1/10 fluid float inside;
 #videos {
     @include layout($videos);
     @include span(10);
-    @include push(1);
+    /*@include push(1);*/
+    float: none;
+    margin: 0 auto;
+    max-width: $width-all;
     @include breakpoint($medium) {
         @include span(12);
         @include push(0);
@@ -1676,7 +1692,15 @@ $videos: 12 1/10 fluid float inside;
 .purchase-block {
     position: relative;
 }
+#slider-block {
+    float: none;
+    margin: 0 auto;
+    max-width: $width-all;
+}
 #photo, #more {
+    float: none;
+    margin: 0 auto;
+    max-width: $width-all;
     h2 {
         margin: 0 0 15px 0;
         i {
@@ -1798,7 +1822,10 @@ $videos: 12 1/10 fluid float inside;
 
 footer {
     @include span(10);
-    @include push(1);
+    /*@include push(1);*/
+    float: none;
+    max-width: $width-all;
+    margin: 0 auto;
     @include breakpoint($medium) {
         @include span(12);
         @include push(0);
