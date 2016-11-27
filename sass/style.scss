@@ -44,11 +44,16 @@ body {
 .left {
     float: left;
 }
-
+#main {
+    clear: both;
+}
 header {
     background: url(../img/banner-top.png) repeat-x top left;
-    background: url(../img/banner-bg.png) no-repeat 100% 100%, url(../img/banner-top.png) repeat-x top left;
+    background: url(../img/banner-bg.png) no-repeat 100% -45px, url(../img/banner-top.png) repeat-x top left;
+    max-width:1342px;
     @include full;
+    float: none;
+    margin: 0 auto;
     padding: 0;
     @include breakpoint($medium) {
         background: url(../img/banner-top.png) repeat-x top left;
