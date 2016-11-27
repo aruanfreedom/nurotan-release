@@ -57,6 +57,7 @@ header {
     padding: 0;
     @include breakpoint($medium) {
         background: url(../img/banner-top.png) repeat-x top left;
+        height: 69px;
     }
     .banner {
         @include span(10);
@@ -1254,6 +1255,10 @@ $news: 12 1/4 fluid float inside;
 
 .tabs {
     &.leader-page {
+        float: none;
+        margin: 0 auto;
+        max-width: $width-all;
+        display: block;
        ul li>[aria-selected=true] {
            background: none;
            color: $blue;
@@ -1586,9 +1591,12 @@ $green-block: 12 1/30 fluid float inside;
         }
 
 .center {
+    margin: auto;
     margin-top: gutter(1);
     @include span(10);
-    @include push(1);
+    float: none;
+    max-width: $width-all;
+    // @include push(1);
     @include breakpoint($medium) {
         @include full();
         @include push(0);
@@ -1597,6 +1605,7 @@ $green-block: 12 1/30 fluid float inside;
 
 $videos: 12 1/10 fluid float inside;
 #videos {
+    clear: both;
     @include layout($videos);
     @include span(10);
     /*@include push(1);*/
@@ -1619,7 +1628,7 @@ $videos: 12 1/10 fluid float inside;
             background: #fff;
             padding-right: 10px;
             position: absolute;
-            top: 0;
+            top: -18px; 
             z-index: 2;
         }
     }
@@ -1698,6 +1707,7 @@ $videos: 12 1/10 fluid float inside;
     position: relative;
 }
 #slider-block {
+    clear: both;
     float: none;
     margin: 0 auto;
     max-width: $width-all;
@@ -2097,13 +2107,20 @@ footer {
         }
     }
 }
-
+#theme {
+    max-width: $width-all;
+    float: none;
+    margin: 0 auto;
+}
 .news-page,
 .video-page,
 .all-video-page,
 .hot-line-page {
     #theme-blog {
         margin-top: 60px;
+        float: none;
+        margin: 60px auto 0 auto;
+        max-width: $width-all;
     }
     .theme-search {
         background: $light-green;
@@ -2470,7 +2487,10 @@ footer {
 #see-also-blog,
 .category-blog {
     @include span(10);
-    @include push(1);
+    // @include push(1);
+    float: none;
+    margin: 0 auto;
+    max-width: $width-all;
     @include breakpoint($medium) {
         @include span(12);
         @include push(0);
@@ -2912,14 +2932,19 @@ footer {
 
 #main-video {
     border-bottom: 2px solid $grey;
+    float: none;
+    margin: 0 auto;
+    max-width: $width-all;
 }
 .theme-bg {
     margin: 20px 0;
 }
 
 ul.tab-article {
-        margin-bottom: 0;
         border-bottom: 2px solid #000;
+        float: none;
+        margin: 15px auto;
+        max-width: $width-all;
         li {  
             display: inline-block;
             padding: 5px 10px;
