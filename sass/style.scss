@@ -1593,6 +1593,7 @@ $green-block: 12 1/30 fluid float inside;
 .center {
     margin: auto;
     margin-top: gutter(1);
+    position: relative;
     @include span(10);
     float: none;
     max-width: $width-all;
@@ -3119,4 +3120,11 @@ button {
 #imap {
     height: 500px;
     width: 100%;
+}
+
+#tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 335px;
 }

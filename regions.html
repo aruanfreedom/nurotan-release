@@ -10,262 +10,273 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link href="bower_components/responsive/build/responsive.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
-
-
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
+  <div id="infobardm">Размер шрифта:  
+  <a onclick="dmfunctsizeone();" class="dmchangea1">A</a>
+  <a onclick="dmfunctsizetwo();" class="dmchangea2">A</a>
+  <a onclick="dmfunctsizethree();" class="dmchangea3">A</a>
+   
+  Изображения <a onclick="dmdisableimage();" class="dmdisableimage">Выключить</a>
+  <a onclick="dmenableimage();" class="dmenableimage">Включить</a>
+   
+  Цвет сайта <a onclick="dmcolor1();" class="dmcolor1">Ц</a>
+  <a onclick="dmcolor2();" class="dmcolor2">Ц</a>
+  <a onclick="dmcolor3();" class="dmcolor3">Ц</a>
+   
+  <a onclick="dmreset();" class="dmcolor4">Х</a>
+</div>
+
 <body>
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">Вы используете устаревший браузер. Пожалуйста, обновите <a href="http://browsehappy.com/">браузер</a>,
     чтобы улучшить свои возможности.</p>
 <![endif]-->
-
-<!-- Header block -->
-<header>
-    <!--Banner top-->
-    <div class="banner">
-        <div id="main-banner">
-            <img src="img/text-top-banner.png" alt="баннер">
+    <!-- Header block -->
+    <header>
+        <!--Banner top-->
+        <div class="banner">
+            <div id="main-banner">
+                <img src="img/text-top-banner.png" alt="баннер">
+            </div>
         </div>
-    </div> 
-    <!--Banner top END-->
-    <div id="menu-block">
-        <div id="logo" class="cell-2">
-            <img src="img/logo.png" alt="Нур отан логотип">
-        </div>
-        <div class="on-menu cell-10">
-
-            <div class="left-on-menu">
-                <div class="block-top-right">
-                    <span class="language">
+        <!--Banner top END-->
+        
+        <div id="menu-block">
+            <div id="logo" class="cell-2">
+                <img src="img/logo.png" alt="Нур отан логотип">
+            </div>
+            <div class="on-menu cell-10">
+                <div class="left-on-menu">
+                    <div class="block-top-right">
+                        <span class="language">
                             <i>KZ</i>
                             <i class="active">RU</i>
                             <!-- <i>EN</i> -->
                         </span>
-                    <span class="tel">
+                        <span class="tel">
                             <img src="img/icons/tel.png" alt="telephone">
                         </span>
-                    <span>
-                            <img src="img/icons/glasses.png" alt="glasses">
+                        <span>
+                            <a href="#" onclick="dmuGostSettings();" id="enableuGost"> <img src="img/icons/glasses.png" alt="glasses"></a>
                         </span>
+                    </div>
+                </div>
+                <div class="right-on-menu">
+                    <div class="block-top-right right">
+                        <input type="text" placeholder="Я ищу..." class="search">
+                    </div>
                 </div>
             </div>
-            <div class="right-on-menu">
-                <div class="block-top-right right">
-                    <input type="text" placeholder="Я ищу..." class="search">
-                    
-                </div>
-            </div>
-
-        </div>
-
-        <div class="menu dropdown dropdown-inline">
-            <ul class="big-menu">
-                <li>
-                    <a href="#" class="active">Главная</a>                 
+            <div class="menu dropdown dropdown-inline">
+                <ul class="big-menu">
+                    <li>
+                        <a href="#" class="active">Главная</a>
+                    </li>
+                    <li><a href="#">Партия</a>
+                        <ul class="lv-1">
+                            <li><a href="#Лидер">Лидер партии <span class="arrow-menu">></span></a>
+                                <ul class="lv-2">
+                                    <li><a href="#Лидер">Лидер партии</a></li>
+                                    <li><a href="#События">События</a></li>
+                                    <li><a href="#Выступления">Выступления</a></li>
+                                    <li><a href="#Послания">Послания</a></li>
+                                    <li><a href="#Цитаты">Цитаты</a></li>
+                                    <li><a href="#Фотографии">Фотографии</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#История">История</a></li>
+                            <li><a href="#Устав">Устав</a></li>
+                            <li><a href="#ППО">ППО</a></li>
+                            <li><a href="#Руководство">Руководство <span class="arrow-menu">></span></a>
+                                <ul class="lv-2">
+                                    <li><a href="#Биография">Биография</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Кодекс">Кодекс этики</a></li>
+                            <li><a href="#Структура">Структура<span class="arrow-menu">></span></a>
+                                <ul class="lv-2">
+                                    <li><a href="#Биография">Органы</a></li>
+                                    <li><a href="#Биография">Центральный аппарат</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Партийные">Партийные кураторы</a></li>
+                            <li><a href="#Пресс">Пресс служба</a></li>
+                            <li><a href="#Проекты">Проекты<span class="arrow-menu">></span></a>
+                                <ul class="lv-2">
+                                    <li><a href="#Занятость">Занятость на селе</a></li>
+                                    <li><a href="#Счастливое">Счастливое детство</a></li>
+                                    <li><a href="#Прозрачный">Прозрачный тариф</a></li>
+                                    <li><a href="#С">С заботой о старшем поколении</a></li>
+                                    <li><a href="#Страна">Страна великой степи</a></li>
+                                    <li><a href="#Будущее">Будущее без барьеров</a></li>
+                                    <li><a href="#Страна">Страна без коррупции - процветающая страна</a></li>
+                                    <li><a href="#Путевка">Путевка в жизнь</a></li>
+                                    <li><a href="#Молодеж">Молодеж для страны</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Закупки">Закупки</a></li>
+                            <li><a href="#Финансовая">Финансовая отчетность</a></li>
+                            <li><a href="#Вакансии">Вакансии</a></li>
+                            <li><a href="#Контакты">Контакты</a></li>
+                            <li><a href="#Горячая">Горячая линия</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Фракция</a>
+                        <ul class="lv-1">
+                            <li><a href="#О">О фракции</a></li>
+                            <li><a href="#Советы">Советы при фракции</a></li>
+                            <li><a href="#Руководство">Руководство</a></li>
+                            <li><a href="#Новости">Новости фракции</a></li>
+                            <li><a href="#Мультимедиа">Мультимедиа</a></li>
+                            <li><a href="#Депутатские">Депутатские запросы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Новости</a>
+                        <ul class="lv-1">
+                            <li><a href="#Все">Все новости</a></li>
+                            <li><a href="#Пресс">Пресс релизы</a></li>
+                            <li><a href="#Анонсы">Анонсы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Программные документы</a>
+                        <ul class="lv-1">
+                            <li><a href="#Доктрина">Доктрина</a></li>
+                            <li><a href="#Предвыборная">Предвыборная компания</a></li>
+                            <li><a href="#Антикоррупционная">Антикоррупционная компания</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Регионы</a></li>
+                    <!-- <li><a href="#" class="red">Общественная приемная</a></li> -->
+                    <li class="last">
+                        <a href="#"><img src="img/icons/burger.png" alt="burger"></a>
+                        <ul class="lv-1">
+                            <li><a href="#Доктрина">Общественная приемная</a></li>
+                            <li><a href="#Предвыборная">Карта сайта</a></li>
+                            <li><a href="#Антикоррупционная">Медиа галерея <span class="arrow-menu">></span></a>
+                                <ul class="lv-2">
+                                    <li><a href="#Фотогалерея">Фотогалерея <span class="arrow-menu">></span></a>
+                                        <ul class="lv-3">
+                                            <li><a href="#Все фотоальбомы">Все фотоальбомы</a></li>
+                                            <li><a href="#Один фотоальбом">Один фотоальбом</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#Видеогалерея">Видеогалерея <span class="arrow-menu">></span></a>
+                                        <ul class="lv-3">
+                                            <li><a href="#">Все видео</a></li>
+                                            <li><a href="#">Одно видео</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger">
+                        <a href="#"><img src="img/icons/burger.png" alt="burger"></a>
+                    </li>
+                </ul>
                 </li>
-                <li><a href="#">Партия</a>
-                    <ul class="lv-1">
-                        <li><a href="#Лидер">Лидер партии <span class="arrow-menu">></span></a>
-                            <ul class="lv-2">
-                                <li><a href="#Лидер">Лидер партии</a></li>
-                                <li><a href="#События">События</a></li>
-                                <li><a href="#Выступления">Выступления</a></li>
-                                <li><a href="#Послания">Послания</a></li>
-                                <li><a href="#Цитаты">Цитаты</a></li>
-                                <li><a href="#Фотографии">Фотографии</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#История">История</a></li>
-                        <li><a href="#Устав">Устав</a></li>
-                        <li><a href="#ППО">ППО</a></li>
-                        <li><a href="#Руководство">Руководство <span class="arrow-menu">></span></a>
-                            <ul class="lv-2">
-                                <li><a href="#Биография">Биография</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#Кодекс">Кодекс этики</a></li>
-                        <li><a href="#Структура">Структура<span class="arrow-menu">></span></a>
-                            <ul class="lv-2">
-                                <li><a href="#Биография">Органы</a></li>
-                                <li><a href="#Биография">Центральный аппарат</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#Партийные">Партийные кураторы</a></li>
-                        <li><a href="#Пресс">Пресс служба</a></li>
-                        <li><a href="#Проекты">Проекты<span class="arrow-menu">></span></a>
-                            <ul class="lv-2">
-                                <li><a href="#Занятость">Занятость на селе</a></li>
-                                <li><a href="#Счастливое">Счастливое детство</a></li>
-                                <li><a href="#Прозрачный">Прозрачный тариф</a></li>
-                                <li><a href="#С">С заботой о старшем поколении</a></li>
-                                <li><a href="#Страна">Страна великой степи</a></li>
-                                <li><a href="#Будущее">Будущее без барьеров</a></li>
-                                <li><a href="#Страна">Страна без коррупции - процветающая страна</a></li>
-                                <li><a href="#Путевка">Путевка в жизнь</a></li>
-                                <li><a href="#Молодеж">Молодеж для страны</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#Закупки">Закупки</a></li>
-                        <li><a href="#Финансовая">Финансовая отчетность</a></li>
-                        <li><a href="#Вакансии">Вакансии</a></li>
-                        <li><a href="#Контакты">Контакты</a></li>
-                        <li><a href="#Горячая">Горячая линия</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Фракция</a>
-                    <ul class="lv-1">
-                        <li><a href="#О">О фракции</a></li>                        
-                        <li><a href="#Советы">Советы при фракции</a></li>                        
-                        <li><a href="#Руководство">Руководство</a></li>                        
-                        <li><a href="#Новости">Новости фракции</a></li>                        
-                        <li><a href="#Мультимедиа">Мультимедиа</a></li>                        
-                        <li><a href="#Депутатские">Депутатские запросы</a></li>                        
-                    </ul>
-                </li>
-                <li><a href="#">Новости</a>
-                    <ul class="lv-1">
-                        <li><a href="#Все">Все новости</a></li>                        
-                        <li><a href="#Пресс">Пресс релизы</a></li>                        
-                        <li><a href="#Анонсы">Анонсы</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Программные документы</a>
-                    <ul class="lv-1">
-                        <li><a href="#Доктрина">Доктрина</a></li>                        
-                        <li><a href="#Предвыборная">Предвыборная компания</a></li>                        
-                        <li><a href="#Антикоррупционная">Антикоррупционная компания</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Регионы</a></li>
-                <!-- <li><a href="#" class="red">Общественная приемная</a></li> -->
-                <li class="last"><a href="#"><img src="img/icons/burger.png" alt="burger"></a>
-                    <ul class="lv-1">
-                        <li><a href="#Доктрина">Общественная приемная</a></li>                        
-                        <li><a href="#Предвыборная">Карта сайта</a></li>                        
-                        <li><a href="#Антикоррупционная">Медиа галерея <span class="arrow-menu">></span></a>
-                            <ul class="lv-2">
-                                <li><a href="#Фотогалерея">Фотогалерея <span class="arrow-menu">></span></a>
-                                    <ul class="lv-3">
-                                        <li><a href="#Все фотоальбомы">Все фотоальбомы</a></li>
-                                        <li><a href="#Один фотоальбом">Один фотоальбом</a></li>
-                                    </ul>
-                                </li>                        
-                                <li><a href="#Видеогалерея">Видеогалерея <span class="arrow-menu">></span></a>
-                                    <ul class="lv-3">
-                                        <li><a href="#">Все видео</a></li>
-                                        <li><a href="#">Одно видео</a></li>
-                                    </ul>
-                                </li>            
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="burger"><a href="#"><img src="img/icons/burger.png" alt="burger"></a></li>
-            </ul>
-            </li>
-            <ul class="small-menu">
-                <li class="punkt-1"><a href="#" class="active">Главная</a></li>
-                <li class="punkt-1"><a href="#">Партия <span class="arrow-menu">></span></a>
-                    <ul class="lv-1">
-                        <li><a href="#Лидер">Лидер партии</a>
-                            <ul class="lv-2">
-                                <li><a href="#Лидер">Лидер партии</a></li>
-                                <li><a href="#События">События</a></li>
-                                <li><a href="#Выступления">Выступления</a></li>
-                                <li><a href="#Послания">Послания</a></li>
-                                <li><a href="#Цитаты">Цитаты</a></li>
-                                <li><a href="#Фотографии">Фотографии</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#История">История</a></li>
-                        <li><a href="#Устав">Устав</a></li>
-                        <li><a href="#ППО">ППО</a></li>
-                        <li><a href="#Руководство">Руководство <span class="arrow-menu">></span></a>
-                            <ul class="lv-2">
-                                <li><a href="#Биография">Биография</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#Кодекс">Кодекс этики</a></li>
-                        <li><a href="#Структура">Структура<span class="arrow-menu">></span></a>
-                            <ul class="lv-2">
-                                <li><a href="#Биография">Органы</a></li>
-                                <li><a href="#Биография">Центральный аппарат</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#Партийные">Партийные кураторы</a></li>
-                        <li><a href="#Пресс">Пресс служба</a></li>
-                        <li><a href="#Проекты">Проекты<span class="arrow-menu">></span></a>
-                            <ul class="lv-2">
-                                <li><a href="#Занятость">Занятость на селе</a></li>
-                                <li><a href="#Счастливое">Счастливое детство</a></li>
-                                <li><a href="#Прозрачный">Прозрачный тариф</a></li>
-                                <li><a href="#С">С заботой о старшем поколении</a></li>
-                                <li><a href="#Страна">Страна великой степи</a></li>
-                                <li><a href="#Будущее">Будущее без барьеров</a></li>
-                                <li><a href="#Страна">Страна без коррупции - процветающая страна</a></li>
-                                <li><a href="#Путевка">Путевка в жизнь</a></li>
-                                <li><a href="#Молодеж">Молодеж для страны</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#Закупки">Закупки</a></li>
-                        <li><a href="#Финансовая">Финансовая отчетность</a></li>
-                        <li><a href="#Вакансии">Вакансии</a></li>
-                        <li><a href="#Контакты">Контакты</a></li>
-                        <li><a href="#Горячая">Горячая линия</a></li>
-                    </ul>
-                </li>
-                <li class="punkt-1"><a href="#">Фракция <span class="arrow-menu">></span></a>
-                    <ul class="lv-1">
-                        <li><a href="#О">О фракции</a></li>                        
-                        <li><a href="#Советы">Советы при фракции</a></li>                        
-                        <li><a href="#Руководство">Руководство</a></li>                        
-                        <li><a href="#Новости">Новости фракции</a></li>                        
-                        <li><a href="#Мультимедиа">Мультимедиа</a></li>                        
-                        <li><a href="#Депутатские">Депутатские запросы</a></li>                        
-                    </ul>
-                </li>
-                <li class="punkt-1"><a href="#">Новости <span class="arrow-menu">></span></a>
-                    <ul class="lv-1">
-                        <li><a href="#Все">Все новости</a></li>                        
-                        <li><a href="#Пресс">Пресс релизы</a></li>                        
-                        <li><a href="#Анонсы">Анонсы</a></li>
-                    </ul>
-                </li>
-                <li class="punkt-1"><a href="#">Программные документы <span class="arrow-menu">></span></a>
-                    <ul class="lv-1">
-                        <li><a href="#Доктрина">Доктрина</a></li>                        
-                        <li><a href="#Предвыборная">Предвыборная компания</a></li>                        
-                        <li><a href="#Антикоррупционная">Антикоррупционная компания</a></li>
-                    </ul>
-                </li>
-                <li class="punkt-1"><a href="#">Регионы</a></li>
-                <li class="punkt-1"><a href="#Доктрина">Общественная приемная</a></li>                        
-                <li class="punkt-1"><a href="#Предвыборная">Карта сайта</a></li>                        
-                <li class="punkt-1"><a href="#Предвыборная">Медиа галерея <span class="arrow-menu">></span></a>
-                    <ul class="lv-1">
-                        <li><a href="#Фотогалерея">Фотогалерея</a>
-                            <ul class="lv-2">
-                                <li><a href="#Все фотоальбомы">Все фотоальбомы</a></li>
-                                <li><a href="#Один фотоальбом">Один фотоальбом</a></li>
-                            </ul>
-                        </li>                        
-                        <li><a href="#Видеогалерея">Видеогалерея</a>
-                            <ul class="lv-2">
-                                <li><a href="#">Все видео</a></li>
-                                <li><a href="#">Одно видео</a></li>
-                            </ul>
-                        </li>            
-                    </ul>
-                </li>
-            </ul>
-            <div class="cell-login-soc">
+                <ul class="small-menu">
+                    <li class="punkt-1"><a href="#" class="active">Главная</a></li>
+                    <li class="punkt-1"><a href="#">Партия <span class="arrow-menu">></span></a>
+                        <ul class="lv-1">
+                            <li><a href="#Лидер">Лидер партии</a>
+                                <ul class="lv-2">
+                                    <li><a href="#Лидер">Лидер партии</a></li>
+                                    <li><a href="#События">События</a></li>
+                                    <li><a href="#Выступления">Выступления</a></li>
+                                    <li><a href="#Послания">Послания</a></li>
+                                    <li><a href="#Цитаты">Цитаты</a></li>
+                                    <li><a href="#Фотографии">Фотографии</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#История">История</a></li>
+                            <li><a href="#Устав">Устав</a></li>
+                            <li><a href="#ППО">ППО</a></li>
+                            <li><a href="#Руководство">Руководство <span class="arrow-menu">></span></a>
+                                <ul class="lv-2">
+                                    <li><a href="#Биография">Биография</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Кодекс">Кодекс этики</a></li>
+                            <li><a href="#Структура">Структура<span class="arrow-menu">></span></a>
+                                <ul class="lv-2">
+                                    <li><a href="#Биография">Органы</a></li>
+                                    <li><a href="#Биография">Центральный аппарат</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Партийные">Партийные кураторы</a></li>
+                            <li><a href="#Пресс">Пресс служба</a></li>
+                            <li><a href="#Проекты">Проекты<span class="arrow-menu">></span></a>
+                                <ul class="lv-2">
+                                    <li><a href="#Занятость">Занятость на селе</a></li>
+                                    <li><a href="#Счастливое">Счастливое детство</a></li>
+                                    <li><a href="#Прозрачный">Прозрачный тариф</a></li>
+                                    <li><a href="#С">С заботой о старшем поколении</a></li>
+                                    <li><a href="#Страна">Страна великой степи</a></li>
+                                    <li><a href="#Будущее">Будущее без барьеров</a></li>
+                                    <li><a href="#Страна">Страна без коррупции - процветающая страна</a></li>
+                                    <li><a href="#Путевка">Путевка в жизнь</a></li>
+                                    <li><a href="#Молодеж">Молодеж для страны</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Закупки">Закупки</a></li>
+                            <li><a href="#Финансовая">Финансовая отчетность</a></li>
+                            <li><a href="#Вакансии">Вакансии</a></li>
+                            <li><a href="#Контакты">Контакты</a></li>
+                            <li><a href="#Горячая">Горячая линия</a></li>
+                        </ul>
+                    </li>
+                    <li class="punkt-1"><a href="#">Фракция <span class="arrow-menu">></span></a>
+                        <ul class="lv-1">
+                            <li><a href="#О">О фракции</a></li>
+                            <li><a href="#Советы">Советы при фракции</a></li>
+                            <li><a href="#Руководство">Руководство</a></li>
+                            <li><a href="#Новости">Новости фракции</a></li>
+                            <li><a href="#Мультимедиа">Мультимедиа</a></li>
+                            <li><a href="#Депутатские">Депутатские запросы</a></li>
+                        </ul>
+                    </li>
+                    <li class="punkt-1"><a href="#">Новости <span class="arrow-menu">></span></a>
+                        <ul class="lv-1">
+                            <li><a href="#Все">Все новости</a></li>
+                            <li><a href="#Пресс">Пресс релизы</a></li>
+                            <li><a href="#Анонсы">Анонсы</a></li>
+                        </ul>
+                    </li>
+                    <li class="punkt-1"><a href="#">Программные документы <span class="arrow-menu">></span></a>
+                        <ul class="lv-1">
+                            <li><a href="#Доктрина">Доктрина</a></li>
+                            <li><a href="#Предвыборная">Предвыборная компания</a></li>
+                            <li><a href="#Антикоррупционная">Антикоррупционная компания</a></li>
+                        </ul>
+                    </li>
+                    <li class="punkt-1"><a href="#">Регионы</a></li>
+                    <li class="punkt-1"><a href="#Доктрина">Общественная приемная</a></li>
+                    <li class="punkt-1"><a href="#Предвыборная">Карта сайта</a></li>
+                    <li class="punkt-1"><a href="#Предвыборная">Медиа галерея <span class="arrow-menu">></span></a>
+                        <ul class="lv-1">
+                            <li><a href="#Фотогалерея">Фотогалерея</a>
+                                <ul class="lv-2">
+                                    <li><a href="#Все фотоальбомы">Все фотоальбомы</a></li>
+                                    <li><a href="#Один фотоальбом">Один фотоальбом</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Видеогалерея">Видеогалерея</a>
+                                <ul class="lv-2">
+                                    <li><a href="#">Все видео</a></li>
+                                    <li><a href="#">Одно видео</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="cell-login-soc">
                     <span class="login">
                             <span>
                                 <a href="#sign">
@@ -273,25 +284,23 @@
                                     <i>Войти</i>
                                 </a>
                             </span>
-                            <span><a href="#sign-up"><i>Регистрация</i></a></span>
-                        </span>
-                         <span class="social">
+                    <span><a href="#sign-up"><i>Регистрация</i></a></span>
+                    </span>
+                    <span class="social">
                             <a href="#twitter" class="twitter"></a>
                             <a href="#facebook" class="facebook"></a>
                             <a href="#google-plus" class="google-plus"></a>
                             <a href="#youtube" class="youtube"></a>
                             <a href="#rss" class="rss"></a>
                         </span>
-                        </div>
+                </div>
+            </div>
         </div>
-    </div>
-</header>
-<!-- End Header block -->
-
-<!-- Main-->
-<div id="main" class="all-video-page">
-
-    <div id='theme-blog' class="theme-search city center">
+    </header>
+    <!-- End Header block -->
+    <!-- Main-->
+    <div id="main" class="all-video-page">
+        <div id='theme-blog' class="theme-search city center">
             <div class="left-theme">
                 <h1 class="clock-load">О ФРАКЦИИ</h1>
             </div>
@@ -301,12 +310,10 @@
             </div>
             <div class="clearfix"></div>
         </div>
-
         <div class="center">
-            <object data="img/kazakhstanHigh.svg" type="image/svg+xml" id="imap"></object>
+            <object id="imap" data="svg/maps2.svg" type="image/svg+xml"></object>
         </div>
-
-         <ul class="tab-article center">
+        <ul class="tab-article center">
             <li class="active"><a href="#">НОВОСТИ</a></li>
             <li><a href="#">РУКОВОДСТВО</a></li>
             <li><a href="#">КОНТАКТЫ</a></li>
@@ -314,16 +321,15 @@
             <li class="right"><a href="#" class="active">Календарь <span class="calendar active"></span></a>
             </li>
         </ul>
-
-<div id="main-video" class="center">
-         <div class="content-news">
+        <div id="main-video" class="center">
+            <div class="content-news">
                 <div id="blog" class="cell-12 none-margin-top">
                     <div class="purchase-block cell-medium-12">
                         <div class="large-block none-margin-top h-auto">
                             <span class="category"><i>Политика</i></span>
                             <img src="img/top-block/conference.jpg" alt="конференция">
                             <div class="topic">
-                                <h2 class='small-text'>Заседание Коалиции Демократических сил  Жамбылской </h2>
+                                <h2 class='small-text'>Заседание Коалиции Демократических сил Жамбылской </h2>
                                 <span class="date left-date"><i>6 июля, 2016</i></span>
                             </div>
                         </div>
@@ -333,7 +339,7 @@
                             <span class="category"><i>Политика</i></span>
                             <img src="img/top-block/conference.jpg" alt="конференция">
                             <div class="topic">
-                                <h2 class='small-text'>Заседание Коалиции Демократических сил  Жамбылской </h2>
+                                <h2 class='small-text'>Заседание Коалиции Демократических сил Жамбылской </h2>
                                 <span class="date left-date"><i>6 июля, 2016</i></span>
                             </div>
                         </div>
@@ -343,7 +349,7 @@
                             <span class="category"><i>Политика</i></span>
                             <img src="img/top-block/conference.jpg" alt="конференция">
                             <div class="topic">
-                                <h2 class='small-text'>Заседание Коалиции Демократических сил  Жамбылской </h2>
+                                <h2 class='small-text'>Заседание Коалиции Демократических сил Жамбылской </h2>
                                 <span class="date left-date"><i>6 июля, 2016</i></span>
                             </div>
                         </div>
@@ -353,13 +359,12 @@
                             <span class="category"><i>Политика</i></span>
                             <img src="img/top-block/conference.jpg" alt="конференция">
                             <div class="topic">
-                                <h2 class='small-text'>Заседание Коалиции Демократических сил  Жамбылской </h2>
+                                <h2 class='small-text'>Заседание Коалиции Демократических сил Жамбылской </h2>
                                 <span class="date left-date"><i>6 июля, 2016</i></span>
                             </div>
                         </div>
                     </div>
-                   
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -368,10 +373,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -380,10 +385,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -392,10 +397,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -404,10 +409,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -416,10 +421,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -428,10 +433,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -440,10 +445,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -452,10 +457,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -464,10 +469,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -476,10 +481,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -488,10 +493,10 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
-                  <div class="purchase-block">
+                    <div class="purchase-block">
                         <span class="grey uppercase">Политика</span>
                         <span class="date none-bg">
                                     <strong><i>11 июля, 2016</i></strong>
@@ -500,93 +505,87 @@
                             <a href="#" class="green link">Автопробег «Ұлы Дала азаматтары»
 побывал в Павлодаре
                             </a>
-                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>                        </p>
-                        
+                            <a href="#"><img src="img/icons/shared-grey.png" alt="share назарбаев" class="topic-share-grey"></a>
+                        </p>
                     </div>
                 </div>
                 <button class="load-more" type="button">Загрузить еще</button>
                 <div class="clearfix"></div>
             </div>
+        </div>
+        <!--Slider links-->
+        <div id="slider-block" class="slider-bottom">
+            <div class="item">
+                <img src="img/slider/slider1.jpg">
             </div>
-
-    <!--Slider links-->
-    <div id="slider-block" class="slider-bottom">
-        <div class="item">
-            <img src="img/slider/slider1.jpg">            
+            <div class="item">
+                <img src="img/slider/slider2.jpg">
+            </div>
+            <div class="item">
+                <img src="img/slider/slider3.jpg">
+            </div>
+            <div class="item">
+                <img src="img/slider/slider4.jpg">
+            </div>
+            <div class="item">
+                <img src="img/slider/slider5.jpg">
+            </div>
+            <div class="item">
+                <img src="img/slider/slider6.jpg">
+            </div>
         </div>
-        <div class="item">
-            <img src="img/slider/slider2.jpg">            
-        </div>
-        <div class="item">
-            <img src="img/slider/slider3.jpg">            
-        </div>
-        <div class="item">
-            <img src="img/slider/slider4.jpg">            
-        </div>
-        <div class="item">
-            <img src="img/slider/slider5.jpg">            
-        </div>
-        <div class="item">
-            <img src="img/slider/slider6.jpg">            
-        </div>
+        <!--End Slider links-->
     </div>
-    <!--End Slider links-->
-
-</div>
-<!-- End Main -->
-
-<!--Footer-->
-<footer>
-    <div class="menu-bottom">
-        <ul>
-            <li><a href="#" class="active">Главная</a></li>
-            <li><a href="#">Партия</a></li>
-            <li><a href="#">Фракция</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Программные документы</a></li>
-            <li><a href="#">Регионы</a></li>
-            <li><a href="#">Общественная приемная</a></li>
-        </ul>
-    </div>
-    <div class="cell-2">
-        <img src="img/logo-2.png" alt="Нур отан логотип" class="logo2">
-    </div>
-    <div class="block-top-right">
-        <input type="text" placeholder="Я ищу..." class="search">
-        <span class="social">
+    <!-- End Main -->
+    <!--Footer-->
+    <footer>
+        <div class="menu-bottom">
+            <ul>
+                <li><a href="#" class="active">Главная</a></li>
+                <li><a href="#">Партия</a></li>
+                <li><a href="#">Фракция</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Программные документы</a></li>
+                <li><a href="#">Регионы</a></li>
+                <li><a href="#">Общественная приемная</a></li>
+            </ul>
+        </div>
+        <div class="cell-2">
+            <img src="img/logo-2.png" alt="Нур отан логотип" class="logo2">
+        </div>
+        <div class="block-top-right">
+            <input type="text" placeholder="Я ищу..." class="search">
+            <span class="social">
                 <a href="#twitter" class="twitter"></a>
                 <a href="#facebook" class="facebook"></a>
                 <a href="#google-plus" class="google-plus"></a>
                 <a href="#youtube" class="youtube"></a>
                 <a href="#rss" class="rss"></a>
             </span>
-    </div>
-    <div class="copright">
-        <span>© 2016  Партия “Нұр Отан”. Все права защищены.</span>
-    </div>
-</footer>
-<!--Footer END-->
-
-<!--Start increase and decrease-->
-<div id="font-block-fixed">
-    <button id="increase">+</button><br />
-    <button id="decrease">-</button>
-</div>
-<!--End increase and decrease-->
-
-<!--Lib js-->
-<script src="js/vendor/jquery-1.12.0.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/slider/owl.carousel.min.js"></script>
-
-<script src="bower_components/responsive/build/responsive.min.js"></script>
-<!--Lib js END-->
-
-<!--My script-->
-<script src="js/main.js"></script>
-<!--My script End-->
-
-<script>
+        </div>
+        <div class="copright">
+            <span>© 2016  Партия “Нұр Отан”. Все права защищены.</span>
+        </div>
+    </footer>
+    <!--Footer END-->
+    <!--Start increase and decrease-->
+    <!--<div id="font-block-fixed">-->
+        <!--<a href="#" onclick="dmuGostSettings();" id="enableuGost">Включить версию для слабовидящих</a>-->
+        <!--<button id="increase">+</button><br />
+        <button id="decrease">-</button>-->
+    <!--</div>-->
+    <!--End increase and decrease-->
+    <!--Lib js-->
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/slider/owl.carousel.min.js"></script>
+    <script src="bower_components/responsive/build/responsive.min.js"></script>
+    <!--Lib js END-->
+    <!--My script-->
+    <script src="js/main.js"></script>
+    <script src="js/uGost11.js"></script>
+    <!--My script End-->
+    <script>
 
     $('.period').owlCarousel({
         loop: true,
@@ -638,7 +637,62 @@
         }
     });
 </script>
+    <script>
+// var map = document.getElementById("imap");
+//             map.addEventListener("load",function(){
+//                 var svgDoc = map.contentDocument;
+//                 var tooltipCreateElement = svgDoc.getElementById('window');
+//                 var img = svgDoc.getElementById('bg');
+//                 var text1 = svgDoc.getElementById('text1');
+//                 var text2 = svgDoc.getElementById('text2');
 
+//                 var tooltip = {
+//                     info: function () {                        
+                       
+//                     },
+//                     mapEvent: function (event) {
+//                         var allMap = svgDoc.getElementsByClassName("maps-item");
+//                         var mapItem;
+
+//                          for (mapItem = 0; mapItem < allMap.length; mapItem++) {
+//                             allMap[mapItem].addEventListener(event, function (e) {
+//                                 tooltip.centerCreate(e, this);
+//                             });
+//                         } 
+//                     },
+//                     centerCreate: function (e, mapCls) {
+//                         console.log(e)
+//                         console.log(mapCls)
+//                         var widthClsCenter = e.clientX;
+//                         var heightClsCenter = e.clientY;
+//                         // var widthClsCenter = mapCls.getBoundingClientRect().width / 2;
+//                         // var heightClsCenter = mapCls.getBoundingClientRect().height / 2;
+//                         tooltipCreateElement.style.opacity = 1;
+//                         tooltipCreateElement.style.display = 'block';
+
+//                         img.setAttribute('x', widthClsCenter * 10);
+//                         img.setAttribute('y', heightClsCenter * 10);
+//                         text1.setAttribute('x', widthClsCenter * 5);
+//                         text1.setAttribute('y', heightClsCenter * 5);
+//                         text2.setAttribute('x', widthClsCenter * 5);
+//                         text2.setAttribute('y', heightClsCenter * 5);
+                        
+//                         console.log(widthClsCenter);
+//                         console.log(heightClsCenter);
+//                     },
+//                     start: function () {
+//                         // this.info();
+//                         // this.mapEvent('mouseenter');
+//                         this.mapEvent('click');
+//                     }
+//                 };
+
+//                 // tooltip.start();
+
+                    
+
+//             }, false);
+            </script>
 </body>
 
 </html>
