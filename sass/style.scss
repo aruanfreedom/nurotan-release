@@ -3122,9 +3122,17 @@ button {
     width: 100%;
 }
 
-#tooltip {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 335px;
+.box-modal {
+    .leadership-description {
+        h2 {
+            padding: 10px;
+        }
+    }
+    .leadership-item {
+        margin: 20px 0 0 0; 
+    }
+}
+
+.box-modal_close {
+    right: -50px;
 }
